@@ -1,0 +1,1 @@
+Figure1 is the matched-route protocol schematic; Figure2 uses results/DELTA_TRIAD_UNIT_LEVEL.csv; Figure3 uses results/CAUSAL_DIRECTION_LEVEL.csv plus unit/cell Spearman summaries; Figure4 uses results/FULL_DOSE_UNIT_LEVEL.csv and FULL_DOSE_SUMMARY.csv. No polished figures are included. Preserve all checkpoint/stratum heterogeneity.

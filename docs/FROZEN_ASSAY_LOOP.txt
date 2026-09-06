@@ -1,0 +1,56 @@
+        for index, record in enumerate(records):
+            actions = torch.as_tensor(np.asarray(record["actions"][ANCHOR:ANCHOR + HORIZON]), dtype=torch.float32, device=device)
+            fmap = lambda state: future_map(model, state, actions, weights)
+            rs = {name: response_operator(fmap, state[index]) for name, state in routes.items()}
+            comp = compare_routes(rs["F"], rs["CF"], rs["P"])
+            stratum = "S1" if record["stratum"].startswith("S1") else "S2"
+            evidence.add_route_operators(seed, record["intervention_unit_id"], stratum, rs)
+            unit_rows.append({"checkpoint": seed, "unit_id": record["intervention_unit_id"], "stratum": stratum, "r_F": r90_from_native_cf(rs["F"]), "r_P": r90_from_native_cf(rs["P"]), **comp})
+            for route, matrix in rs.items():
+                singular = np.linalg.svd(matrix, compute_uv=False)
+                cumulative = np.cumsum(singular * singular) / float(singular @ singular)
+                spectra_rows.extend({"checkpoint": seed, "unit_id": record["intervention_unit_id"], "stratum": stratum, "route": route, "singular_index": j + 1, "normalized_cumulative_energy": float(value)} for j, value in enumerate(cumulative))
+            if record["intervention_unit_id"] in causal_ids:
+                for route in ("CF", "P"):
+                    state = routes[route][index]
+                    phi_t = torch.eye(192, dtype=torch.float32, device=device)
+                    q = state
+                    for step in range(HORIZON):
+                        transition_j = torch.func.jacrev(lambda x: model.transition(x, actions[step]))(q)
+                        phi_t = transition_j @ phi_t
+                        q = model.transition(q, actions[step])
+                    phi = phi_t.detach().cpu().numpy()
+                    anchor_j = torch.func.jacrev(lambda q: model.decode(q))(state).detach().cpu().numpy()
+                    evidence.add_construction(seed, record["intervention_unit_id"], stratum, route, phi, anchor_j, deltas[index])
+                    bank = direction_bank(rs[route], phi, anchor_j, interface["U4"], seed, record["intervention_unit_id"], route, int(comp["r_CF"]))
+                    numpy_map = lambda q: fmap(torch.as_tensor(q, dtype=torch.float32, device=device)).detach().cpu().numpy()
+                    epsilon_ref = float(np.linalg.norm(deltas[index]))
+                    epsilon_applied = 0.10 * epsilon_ref
+                    evaluated = evaluate_bank_with_raw(numpy_map, state.detach().cpu().numpy(), rs[route], bank, epsilon_applied)
+                    causal_rows.append({"checkpoint": seed, "unit_id": record["intervention_unit_id"], "stratum": stratum, "route": route, "spearman": evaluated["spearman"]})
+                    evidence.add_causal(seed, record["intervention_unit_id"], stratum, route, epsilon_ref, epsilon_applied, evaluated)
+            # The fixed 33-node path is evaluated with exact autodiff Jacobians.
+            state_f = routes["F"][index].detach().cpu().numpy()
+            delta = deltas[index].astype(np.float64)
+            def np_map(q: np.ndarray) -> np.ndarray:
+                return fmap(torch.as_tensor(q, dtype=torch.float32, device=device)).detach().cpu().numpy().reshape(-1)
+            r_grid = []
+            q_grid = []
+            for gamma in np.arange(33) / 32.0:
+                state = torch.as_tensor(state_f + gamma * delta, dtype=torch.float32, device=device)
+                rg = response_operator(fmap, state)
+                r_grid.append(rg)
+                q_grid.append(rg @ delta)
+            actual = np_map(state_f + delta) - np_map(state_f)
+            denom = np.linalg.norm(actual) + 1e-12
+            q_grid_array = np.asarray(q_grid)
+            i8, i16, i32 = (composite_simpson(q_grid_array, n) for n in (8, 16, 32))
+            chord = 0.5 * (r_grid[0] + r_grid[32])
+            dose_rows.append({"checkpoint": seed, "unit_id": record["intervention_unit_id"], "stratum": stratum, "E_local": float(np.linalg.norm(actual - r_grid[0] @ delta) / denom), "E_int8": float(np.linalg.norm(actual - i8) / denom), "E_int16": float(np.linalg.norm(actual - i16) / denom), "E_int32": float(np.linalg.norm(actual - i32) / denom), "I16_I8_relative": float(np.linalg.norm(i16 - i8) / denom), "I32_I16_relative": float(np.linalg.norm(i32 - i16) / denom), "C_R_midpoint": float(np.linalg.norm(r_grid[16] - chord) / (np.linalg.norm(r_grid[32] - r_grid[0]) + 1e-12))})
+            evidence.add_full_dose(seed, record["intervention_unit_id"], stratum, delta, actual, r_grid, q_grid_array, i8, i16, i32)
+            base_distance = operator_distance(r_grid[0], rs["CF"])
+            base_similarity = subspace_similarity(r_grid[0], rs["CF"], int(comp["r_CF"]))
+            for gamma, grid_index in zip(GAMMA_R, (0, 8, 16, 24, 32)):
+                distance = operator_distance(r_grid[grid_index], rs["CF"])
+                similarity = subspace_similarity(r_grid[grid_index], rs["CF"], int(comp["r_CF"]))
+                progression_rows.append({"checkpoint": seed, "unit_id": record["intervention_unit_id"], "stratum": stratum, "gamma": float(gamma), "d_R_gamma_CF": distance, "S_sub_gamma_CF": similarity, "P_d": float((base_distance - distance) / (base_distance + 1e-12)), "P_s": float(similarity - base_similarity)})

@@ -1,0 +1,33 @@
+{
+  "dimension": 192,
+  "ordering": [
+    "object0_recurrent:48",
+    "object0_middle:16",
+    "object1_recurrent:48",
+    "object1_middle:16",
+    "global:64"
+  ],
+  "pack_slices": [
+    [
+      0,
+      48
+    ],
+    [
+      48,
+      64
+    ],
+    [
+      64,
+      112
+    ],
+    [
+      112,
+      128
+    ],
+    [
+      128,
+      192
+    ]
+  ],
+  "patch_point": "once after t=7 assimilation"
+}

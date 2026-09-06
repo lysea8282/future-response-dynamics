@@ -1,0 +1,5 @@
+stratum,metric,aggregation,N,median,Q25,Q75,mean,min,max,fraction_gt_0,units_per_checkpoint,role
+S1,Delta_Align,equal-checkpoint summary of three within-checkpoint unit medians; no unit pooling,3,0.0920489386849993,0.048196011083141754,0.0940883889190881,0.0641732871064868,0.0043430834812842045,0.09612783915317691,1.0,64,frozen_confirmatory
+S1,Delta_PF_Align,equal-checkpoint summary of three within-checkpoint unit medians; no unit pooling,3,0.09760997449577535,0.05714415964265013,0.16632356806550683,0.11644182697351285,0.0166783447895249,0.2350371616352383,1.0,64,post_hoc_descriptive_non_gating
+S2,Delta_Align,equal-checkpoint summary of three within-checkpoint unit medians; no unit pooling,3,0.08192452720326715,0.04410114272016269,0.08972630862998626,0.06191012516567692,0.0062777582370582286,0.09752809005670537,1.0,64,frozen_confirmatory
+S2,Delta_PF_Align,equal-checkpoint summary of three within-checkpoint unit medians; no unit pooling,3,0.06549687708180874,0.04435241142975499,0.0809866992958648,0.06172711478981028,0.023207945777701244,0.09647652150992087,1.0,64,post_hoc_descriptive_non_gating

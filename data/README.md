@@ -1,0 +1,1 @@
+Small frozen affine interface arrays are included as bytes. Checkpoint tensors, raw NPZ operands and full population are external; see EXTERNAL_ARTIFACTS.json. The public local interface manifest is PUBLIC_INTERFACE_BINDINGS.json; configs/FRESH_PAPER1_INTERFACE_MANIFEST_V1.json preserves original artifact bindings as provenance with private paths replaced.

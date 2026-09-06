@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.integrity-scratch/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npz
+.env
+.env.*
+*.log
+.DS_Store

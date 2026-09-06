@@ -1,0 +1,60 @@
+{
+  "anchor": 7,
+  "artifact_bindings": {
+    "U4.npy": {
+      "sha256": "935B35EA3561F2D52762F1F1CD0E35FE9970A9CF768A8ECD67A4F519C4A7CCDD",
+      "size_bytes": 3200
+    },
+    "affine_weights.npy": {
+      "sha256": "99BEA84C326FCA6DCFC68492CD2722813A7D6343C1CA3ACE769C5CA32206C926",
+      "size_bytes": 544
+    },
+    "feature_mean.npy": {
+      "sha256": "0DEA26F8973DD74D7F9CF36F60EDA13B07D82CB2FF327C246155A53D5C16F817",
+      "size_bytes": 232
+    },
+    "feature_scale.npy": {
+      "sha256": "F2300E1301503D7AE74206DDAC4F8D3B40373DD518951A743F6FDDF3C35F9346",
+      "size_bytes": 232
+    },
+    "singular_values.npy": {
+      "sha256": "A3751F6A9AF4B1BDFABE7D7F047A774130FDF3BF1F8B5B5E46921D5F8E93AD25",
+      "size_bytes": 160
+    }
+  },
+  "basis_method": "uncentered_raw_delta_second_moment_SVD_float64",
+  "beta": 1.0,
+  "carrier_dimension": 192,
+  "centering": false,
+  "checkpoint_seed": 291403,
+  "checkpoint_sha256": "8CD0A0F3EC5577F065DDA58806D5E666C2B0F2850A313EF5FB0A6783181D79F5",
+  "delta_definition": "native_counterfactual_carrier_minus_factual_carrier",
+  "feature_order": [
+    "intercept",
+    "object0_vx_edit",
+    "object0_vy_edit",
+    "object1_vx_edit",
+    "object1_vy_edit",
+    "object0_x",
+    "object0_y",
+    "object0_vx",
+    "object0_vy",
+    "object1_x",
+    "object1_y",
+    "object1_vx",
+    "object1_vy"
+  ],
+  "fit_population_path": "external-artifact/W30_CARRIER_FIT_V1.jsonl",
+  "fit_population_sha256": "5C51BBB45EA3A8EC6AF16F1EE2F206C5EDD2F7C1A8D56F8CBA8159FEA03F15EE",
+  "fit_split": "W30_CARRIER_FIT",
+  "fit_unit_count": 1024,
+  "full_affine_prediction": true,
+  "intercept_penalty": 0.0,
+  "mapper": "ridge_affine",
+  "rank": 4,
+  "ridge_lambda": 0.0001,
+  "schema_version": "fresh-paper1-rank4-interface-v1",
+  "sign_canonicalization": "largest_absolute_loading_positive",
+  "standardization": "population_mean_std_ddof0_nonintercept; intercept_unscaled",
+  "std_floor": 1e-06
+}

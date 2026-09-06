@@ -1,0 +1,203 @@
+{
+  "comparison": "Exact same-dtype array equality and exact scalar equality (JSON roundtrip); no loosened tolerance",
+  "quantities": [
+    {
+      "comparison_mode": "exact",
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "persisted_operand_dtype": "float64",
+      "producer_scientific_dtype": "float64",
+      "quantity": "R, direction, predicted_vector, g_pred",
+      "reader_recomputation_dtype": "float64",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      }
+    },
+    {
+      "comparison_mode": "exact",
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "persisted_operand_dtype": "float32",
+      "producer_scientific_dtype": "float32",
+      "quantity": "future_base/plus/minus, g_actual, central_difference",
+      "reader_recomputation_dtype": "float32",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      }
+    },
+    {
+      "comparison_mode": "exact",
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "persisted_operand_dtype": "preserve each operand",
+      "producer_scientific_dtype": "mixed: float32 central vector/norm, float64 predicted vector/norm; original NumPy promotion",
+      "quantity": "directional_cosine",
+      "reader_recomputation_dtype": "mixed: float32 central vector/norm, float64 predicted vector/norm; original NumPy promotion",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      }
+    },
+    {
+      "comparison_mode": "exact",
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "persisted_operand_dtype": "float64",
+      "producer_scientific_dtype": "float64",
+      "quantity": "DeltaZ_patch, R_gamma, q_grid, I8/I16/I32",
+      "reader_recomputation_dtype": "float64",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      }
+    },
+    {
+      "comparison_mode": "exact",
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "persisted_operand_dtype": "float32",
+      "producer_scientific_dtype": "float32",
+      "quantity": "DeltaY_PF, norm(DeltaY_PF)",
+      "reader_recomputation_dtype": "float32",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      }
+    },
+    {
+      "comparison_mode": "exact",
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "persisted_operand_dtype": "preserve each operand",
+      "producer_scientific_dtype": "mixed: float32 denominator norm; float64 residual norm",
+      "quantity": "E_local/E_int/convergence",
+      "reader_recomputation_dtype": "mixed: float32 denominator norm; float64 residual norm",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      }
+    },
+    {
+      "comparison_mode": "exact",
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "persisted_operand_dtype": "float32",
+      "producer_scientific_dtype": "float32",
+      "quantity": "Phi, anchor_decoder, epsilon_ref delta",
+      "reader_recomputation_dtype": "float32",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      }
+    },
+    {
+      "comparison_mode": "exact",
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "persisted_operand_dtype": "float64",
+      "producer_scientific_dtype": "float64",
+      "quantity": "r90/Delta_align/Delta_d/C_R/Spearman/medians/classifiers",
+      "reader_recomputation_dtype": "float64",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      }
+    }
+  ],
+  "schema_version": "p2-ffd-numeric-readback-v5",
+  "quantity_rules": {
+    "operator_metrics": {
+      "comparison_mode": "exact",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      },
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "quantity_definition": "r90/Delta_align/Delta_d/C_R/Spearman/medians/classifiers"
+    },
+    "directions": {
+      "comparison_mode": "exact",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      },
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "quantity_definition": "R, direction, predicted_vector, g_pred"
+    },
+    "predicted": {
+      "comparison_mode": "exact",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      },
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "quantity_definition": "R, direction, predicted_vector, g_pred"
+    },
+    "causal_gains": {
+      "comparison_mode": "exact",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      },
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "quantity_definition": "future_base/plus/minus, g_actual, central_difference"
+    },
+    "directional_cosine": {
+      "comparison_mode": "exact",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      },
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "quantity_definition": "directional_cosine"
+    },
+    "spearman": {
+      "comparison_mode": "exact",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      },
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "quantity_definition": "r90/Delta_align/Delta_d/C_R/Spearman/medians/classifiers"
+    },
+    "path_integrals": {
+      "comparison_mode": "exact",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      },
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "quantity_definition": "DeltaZ_patch, R_gamma, q_grid, I8/I16/I32"
+    },
+    "q_operator": {
+      "comparison_mode": "exact",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      },
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "quantity_definition": "DeltaZ_patch, R_gamma, q_grid, I8/I16/I32"
+    },
+    "full_dose_scalars": {
+      "comparison_mode": "exact",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      },
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "quantity_definition": "E_local/E_int/convergence"
+    },
+    "summaries": {
+      "comparison_mode": "exact",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      },
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "quantity_definition": "r90/Delta_align/Delta_d/C_R/Spearman/medians/classifiers"
+    },
+    "population_delta": {
+      "comparison_mode": "exact",
+      "tolerance": {
+        "atol": 0,
+        "rtol": 0
+      },
+      "justification": "Lossless NPZ retains operands; identical operations in original order. Validated by production float32 E2E before freeze.",
+      "quantity_definition": "Phi, anchor_decoder, epsilon_ref delta"
+    }
+  }
+}

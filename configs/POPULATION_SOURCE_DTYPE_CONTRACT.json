@@ -1,0 +1,44 @@
+{
+  "schema_version": "p2-ffd-population-source-dtype-v5",
+  "target_source": {
+    "S1_count": 256,
+    "S2_count": 256,
+    "historical_semantic_overlap_count": 0,
+    "path": "external-artifact/P2_FUTURE_FUNCTIONAL_DYNAMICS_FRESH_POPULATION_V1.jsonl",
+    "record_count": 512,
+    "sha256": "B1DE126F60F2C4A30CF545094D8339AF52DBB096E7D6C339AD6754F747CF885C",
+    "size_bytes": 6946046
+  },
+  "trajectory_storage_dtype": "float32",
+  "metadata_numeric_semantics": "JSON decimal numbers decoded as IEEE754 binary64; original simulator values",
+  "source_cast": "numpy.asarray(metadata,dtype=numpy.float32), IEEE754 round-to-nearest ties-to-even; JSON trajectory numbers represent exactly those float32 values",
+  "anchor_index": 7,
+  "primitive_state_field_order": [
+    "x",
+    "y",
+    "vx",
+    "vy"
+  ],
+  "objects": 2,
+  "edit_metadata_fields": [
+    "edit_object_id",
+    "edit_axis",
+    "edit_sign",
+    "amplitude",
+    "factual_state_t",
+    "counterfactual_state_t",
+    "factual_values",
+    "counterfactual_values"
+  ],
+  "comparison_rule": "Cast metadata-side expected factual/counterfactual anchor states and expected edit result into persisted float32 storage dtype; exact equality, no tolerance; non-edited coordinates unchanged.",
+  "synthetic_contract": {
+    "population_mode": "SYNTHETIC_NON_TARGET",
+    "trajectory_storage_dtype": "float32",
+    "metadata_numeric_semantics": "JSON binary64 metadata; float32 trajectory serialization exactly matches target representation",
+    "required_checkpoint_seeds": [
+      9101,
+      9102,
+      9103
+    ]
+  }
+}

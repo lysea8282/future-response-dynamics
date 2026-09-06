@@ -1,0 +1,234 @@
+{
+  "alignment_component": "ALIGNMENT_REPLICATED",
+  "artifact_manifest_path": "ARTIFACT_MANIFEST.json",
+  "candidate_id": "P2_FUTURE_FUNCTIONAL_DYNAMICS_FRESH_REPLICATION_RC_V5",
+  "checkpoint_first_family_summaries": {
+    "alignment_cells": [
+      {
+        "checkpoint": 291402,
+        "checkpoint_unit_median_Delta_align": 0.0920489386849993,
+        "contrastable": true,
+        "median_Delta_align": 0.0920489386849993,
+        "median_Delta_d": 0.13210965932252214,
+        "median_d_R_F_CF": 0.4998858493418663,
+        "stratum": "S1"
+      },
+      {
+        "checkpoint": 291402,
+        "checkpoint_unit_median_Delta_align": 0.08192452720326715,
+        "contrastable": true,
+        "median_Delta_align": 0.08192452720326715,
+        "median_Delta_d": 0.6778326259419575,
+        "median_d_R_F_CF": 1.1226685692330396,
+        "stratum": "S2"
+      },
+      {
+        "checkpoint": 291403,
+        "checkpoint_unit_median_Delta_align": 0.09612783915317691,
+        "contrastable": true,
+        "median_Delta_align": 0.09612783915317691,
+        "median_Delta_d": 0.17058325126082685,
+        "median_d_R_F_CF": 0.4296284982711141,
+        "stratum": "S1"
+      },
+      {
+        "checkpoint": 291403,
+        "checkpoint_unit_median_Delta_align": 0.09752809005670537,
+        "contrastable": true,
+        "median_Delta_align": 0.09752809005670537,
+        "median_Delta_d": 0.44439674877943747,
+        "median_d_R_F_CF": 1.096577243237721,
+        "stratum": "S2"
+      },
+      {
+        "checkpoint": 291404,
+        "checkpoint_unit_median_Delta_align": 0.0043430834812842045,
+        "contrastable": true,
+        "median_Delta_align": 0.0043430834812842045,
+        "median_Delta_d": -0.00635308331003219,
+        "median_d_R_F_CF": 0.4089841159464872,
+        "stratum": "S1"
+      },
+      {
+        "checkpoint": 291404,
+        "checkpoint_unit_median_Delta_align": 0.0062777582370582286,
+        "contrastable": true,
+        "median_Delta_align": 0.0062777582370582286,
+        "median_Delta_d": 0.05492332907914926,
+        "median_d_R_F_CF": 1.0602388603477877,
+        "stratum": "S2"
+      }
+    ],
+    "causal_cells": [
+      {
+        "checkpoint": 291402,
+        "evaluable": true,
+        "median_spearman": 0.99974387432767,
+        "route": "CF",
+        "stratum": "S1"
+      },
+      {
+        "checkpoint": 291402,
+        "evaluable": true,
+        "median_spearman": 0.999786561939725,
+        "route": "P",
+        "stratum": "S1"
+      },
+      {
+        "checkpoint": 291402,
+        "evaluable": true,
+        "median_spearman": 0.999615811491505,
+        "route": "CF",
+        "stratum": "S2"
+      },
+      {
+        "checkpoint": 291402,
+        "evaluable": true,
+        "median_spearman": 0.9995304362673951,
+        "route": "P",
+        "stratum": "S2"
+      },
+      {
+        "checkpoint": 291403,
+        "evaluable": true,
+        "median_spearman": 0.9995731238794501,
+        "route": "CF",
+        "stratum": "S1"
+      },
+      {
+        "checkpoint": 291403,
+        "evaluable": true,
+        "median_spearman": 0.9996584991035601,
+        "route": "P",
+        "stratum": "S1"
+      },
+      {
+        "checkpoint": 291403,
+        "evaluable": true,
+        "median_spearman": 0.999615811491505,
+        "route": "CF",
+        "stratum": "S2"
+      },
+      {
+        "checkpoint": 291403,
+        "evaluable": true,
+        "median_spearman": 0.999615811491505,
+        "route": "P",
+        "stratum": "S2"
+      },
+      {
+        "checkpoint": 291404,
+        "evaluable": true,
+        "median_spearman": 0.9998719371638352,
+        "route": "CF",
+        "stratum": "S1"
+      },
+      {
+        "checkpoint": 291404,
+        "evaluable": true,
+        "median_spearman": 0.9998719371638352,
+        "route": "P",
+        "stratum": "S1"
+      },
+      {
+        "checkpoint": 291404,
+        "evaluable": true,
+        "median_spearman": 0.9995304362673951,
+        "route": "CF",
+        "stratum": "S2"
+      },
+      {
+        "checkpoint": 291404,
+        "evaluable": true,
+        "median_spearman": 0.9994023734312303,
+        "route": "P",
+        "stratum": "S2"
+      }
+    ],
+    "dose_cells": [
+      {
+        "checkpoint": 291402,
+        "median_C_R_midpoint": 0.24066578830389723,
+        "median_E_int32": 1.787961783514283e-06,
+        "median_E_local": 0.41870611820360165,
+        "median_I32_I16_relative": 2.015282228590726e-06,
+        "numerical_valid": true,
+        "stratum": "S1"
+      },
+      {
+        "checkpoint": 291402,
+        "median_C_R_midpoint": 0.5202290892927939,
+        "median_E_int32": 2.2385326175090946e-06,
+        "median_E_local": 1.158906915736073,
+        "median_I32_I16_relative": 4.122722494563886e-05,
+        "numerical_valid": true,
+        "stratum": "S2"
+      },
+      {
+        "checkpoint": 291403,
+        "median_C_R_midpoint": 0.14382717222512414,
+        "median_E_int32": 1.2561353869176695e-06,
+        "median_E_local": 0.24801350544392803,
+        "median_I32_I16_relative": 4.6669720156166376e-07,
+        "numerical_valid": true,
+        "stratum": "S1"
+      },
+      {
+        "checkpoint": 291403,
+        "median_C_R_midpoint": 0.512394447000273,
+        "median_E_int32": 1.990179192065383e-06,
+        "median_E_local": 0.8455275973556116,
+        "median_I32_I16_relative": 2.678446910377274e-05,
+        "numerical_valid": true,
+        "stratum": "S2"
+      },
+      {
+        "checkpoint": 291404,
+        "median_C_R_midpoint": 0.07963293432461849,
+        "median_E_int32": 3.99798020341674e-06,
+        "median_E_local": 0.18882758804850192,
+        "median_I32_I16_relative": 1.2474715452841873e-07,
+        "numerical_valid": true,
+        "stratum": "S1"
+      },
+      {
+        "checkpoint": 291404,
+        "median_C_R_midpoint": 0.2790494749130188,
+        "median_E_int32": 2.5874138185048722e-06,
+        "median_E_local": 0.6170871096871906,
+        "median_I32_I16_relative": 1.998082695113344e-06,
+        "numerical_valid": true,
+        "stratum": "S2"
+      }
+    ]
+  },
+  "checkpoint_load_ledger_path": "CHECKPOINT_LOAD_LEDGER.json",
+  "checkpoint_support_counts": {
+    "alignment": 3,
+    "causal": 3,
+    "full_dose": 2
+  },
+  "contrastability_gate": "PASS",
+  "expected_checkpoint_seeds": [
+    291402,
+    291403,
+    291404
+  ],
+  "formal_run_id": "p2_future_functional_dynamics_fresh_v1_002",
+  "fresh_checkpoint_load_count": 3,
+  "fresh_target_scientific_execution_count": 1,
+  "full_dose_component": "FULL_DOSE_FUNCTIONAL_RECONFIGURATION_REPLICATED",
+  "integrity_gate": "PASS",
+  "local_causal_component": "LOCAL_OPERATOR_CAUSAL_PREDICTIVENESS_REPLICATED",
+  "online_repair": false,
+  "output_manifest_path": "OUTPUT_MANIFEST.json",
+  "overall_classification": "FRESH_FUTURE_FUNCTIONAL_DYNAMICS_REPLICATION_PASS",
+  "partial_import": false,
+  "path_numerical_validity_gate": "PASS",
+  "population_audit_path": "POPULATION_AUDIT.json",
+  "population_mode": "FORMAL_FRESH_PANEL",
+  "resume": false,
+  "retry": false,
+  "schema_version": "p2-ffd-result-v4",
+  "supporting_operator_distance_component": "FULL_OPERATOR_CONVERGENCE_SUPPORT_REPLICATED"
+}

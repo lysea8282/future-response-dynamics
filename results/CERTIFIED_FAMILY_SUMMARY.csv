@@ -1,0 +1,6 @@
+metric,stratum,value,aggregation_level,source,source_field
+family_median_Delta_align,S1,0.0920489386849993,median of three checkpoint medians,external-artifact/RAW_RECOMPUTATION.json,/family_alignment_medians/S1
+family_median_Delta_align,S2,0.08192452720326715,median of three checkpoint medians,external-artifact/RAW_RECOMPUTATION.json,/family_alignment_medians/S2
+alignment_support_count,both,3,checkpoint supports / 3,external-artifact/RAW_RECOMPUTATION.json,/support_counts/alignment
+causal_support_count,both,3,checkpoint supports / 3,external-artifact/RAW_RECOMPUTATION.json,/support_counts/causal
+full_dose_support_count,both,2,checkpoint supports / 3,external-artifact/RAW_RECOMPUTATION.json,/support_counts/full_dose

@@ -1,0 +1,313 @@
+{
+  "decision": "PASS",
+  "candidate_id": "P2_FUTURE_FUNCTIONAL_DYNAMICS_FRESH_REPLICATION_RC_V5",
+  "candidate_manifest_sha256": "876DD2974BC7F92C7E71850C109E0CBBE202767B17AFEF8C78F09AFF4E22290D",
+  "formal_run_id": "p2_future_functional_dynamics_fresh_v1_002",
+  "checks": {
+    "environment": 1,
+    "candidate_binding": 1,
+    "exit_before_read": 1,
+    "population_counts": 3,
+    "population_strata": 3,
+    "subset": 1,
+    "semantic_join": 160,
+    "population_semantics": 512,
+    "source_dtype": 1024,
+    "metadata_cast": 1024,
+    "edit_operation": 512,
+    "edit_values": 1024,
+    "unchanged_coordinates": 512,
+    "shared_past": 512,
+    "shared_observations": 512,
+    "zero_actions": 512,
+    "stratum_semantics": 512,
+    "semantic_key": 512,
+    "population_audit": 13,
+    "population_binding": 1,
+    "weighted_primitive_contract": 1,
+    "operator_shape": 1,
+    "operator_dtype": 1,
+    "operator_joins": 1,
+    "spectrum_cardinality": 1,
+    "operator_index": 384,
+    "operator_metrics": 3456,
+    "singular_energy": 73728,
+    "causal_cardinality": 1,
+    "causal_join": 1,
+    "construction_dtype": 1,
+    "future_dtype": 1,
+    "construction_delta": 192,
+    "direction_identity": 9984,
+    "direction_exact": 9984,
+    "epsilon": 29952,
+    "dtype_labels": 9984,
+    "predicted_vector": 9984,
+    "central_difference": 9984,
+    "causal_scalars": 29952,
+    "direction_bank_size": 192,
+    "spearman": 192,
+    "dose_shapes": 1,
+    "dose_dtype": 1,
+    "dose_joins": 1,
+    "dose_index": 384,
+    "source_patch": 384,
+    "path_start_R": 384,
+    "q_operator": 1920,
+    "simpson_exact": 1152,
+    "dose_scalars": 2688,
+    "dose_progression": 7680,
+    "summary_all_fields": 1,
+    "output_inventory": 1,
+    "output_members": 24,
+    "source_binding": 17,
+    "load_ledger_count": 1,
+    "load_record": 3,
+    "runtime_journal": 1,
+    "result_field_inventory": 1,
+    "result_each_field": 25,
+    "historical_binding": 1
+  },
+  "failures": [],
+  "diagnostics": {
+    "direction_norm_max_abs_residual": 7.330130524785261e-08,
+    "random_projection_max_abs_residual": 6.210310043996969e-16
+  },
+  "coverage": {
+    "population": 512,
+    "confirmatory": 128,
+    "causal": 32,
+    "operator_units": 384,
+    "directions": 9984,
+    "causal_unit_routes": 192,
+    "full_dose_units": 384,
+    "q_nodes_per_unit": 33,
+    "q_operator_persisted_nodes_per_unit": 5,
+    "spectra_rows": 73728,
+    "dose_progression_rows": 1920,
+    "result_fields": 25
+  },
+  "support_counts": {
+    "alignment": 3,
+    "causal": 3,
+    "full_dose": 2
+  },
+  "family_alignment_medians": {
+    "S1": 0.0920489386849993,
+    "S2": 0.08192452720326715
+  },
+  "reconstructed_summary": {
+    "components": {
+      "alignment": "ALIGNMENT_REPLICATED",
+      "causal": "LOCAL_OPERATOR_CAUSAL_PREDICTIVENESS_REPLICATED",
+      "full_dose": "FULL_DOSE_FUNCTIONAL_RECONFIGURATION_REPLICATED",
+      "supporting_operator_distance": "FULL_OPERATOR_CONVERGENCE_SUPPORT_REPLICATED"
+    },
+    "overall": "FRESH_FUTURE_FUNCTIONAL_DYNAMICS_REPLICATION_PASS",
+    "alignment_cells": [
+      {
+        "checkpoint": 291402,
+        "stratum": "S1",
+        "median_Delta_align": 0.0920489386849993,
+        "checkpoint_unit_median_Delta_align": 0.0920489386849993,
+        "median_Delta_d": 0.13210965932252214,
+        "median_d_R_F_CF": 0.4998858493418663,
+        "contrastable": true
+      },
+      {
+        "checkpoint": 291402,
+        "stratum": "S2",
+        "median_Delta_align": 0.08192452720326715,
+        "checkpoint_unit_median_Delta_align": 0.08192452720326715,
+        "median_Delta_d": 0.6778326259419575,
+        "median_d_R_F_CF": 1.1226685692330396,
+        "contrastable": true
+      },
+      {
+        "checkpoint": 291403,
+        "stratum": "S1",
+        "median_Delta_align": 0.09612783915317691,
+        "checkpoint_unit_median_Delta_align": 0.09612783915317691,
+        "median_Delta_d": 0.17058325126082685,
+        "median_d_R_F_CF": 0.4296284982711141,
+        "contrastable": true
+      },
+      {
+        "checkpoint": 291403,
+        "stratum": "S2",
+        "median_Delta_align": 0.09752809005670537,
+        "checkpoint_unit_median_Delta_align": 0.09752809005670537,
+        "median_Delta_d": 0.44439674877943747,
+        "median_d_R_F_CF": 1.096577243237721,
+        "contrastable": true
+      },
+      {
+        "checkpoint": 291404,
+        "stratum": "S1",
+        "median_Delta_align": 0.0043430834812842045,
+        "checkpoint_unit_median_Delta_align": 0.0043430834812842045,
+        "median_Delta_d": -0.00635308331003219,
+        "median_d_R_F_CF": 0.4089841159464872,
+        "contrastable": true
+      },
+      {
+        "checkpoint": 291404,
+        "stratum": "S2",
+        "median_Delta_align": 0.0062777582370582286,
+        "checkpoint_unit_median_Delta_align": 0.0062777582370582286,
+        "median_Delta_d": 0.05492332907914926,
+        "median_d_R_F_CF": 1.0602388603477877,
+        "contrastable": true
+      }
+    ],
+    "causal_cells": [
+      {
+        "checkpoint": 291402,
+        "stratum": "S1",
+        "route": "CF",
+        "median_spearman": 0.99974387432767,
+        "evaluable": true
+      },
+      {
+        "checkpoint": 291402,
+        "stratum": "S1",
+        "route": "P",
+        "median_spearman": 0.999786561939725,
+        "evaluable": true
+      },
+      {
+        "checkpoint": 291402,
+        "stratum": "S2",
+        "route": "CF",
+        "median_spearman": 0.999615811491505,
+        "evaluable": true
+      },
+      {
+        "checkpoint": 291402,
+        "stratum": "S2",
+        "route": "P",
+        "median_spearman": 0.9995304362673951,
+        "evaluable": true
+      },
+      {
+        "checkpoint": 291403,
+        "stratum": "S1",
+        "route": "CF",
+        "median_spearman": 0.9995731238794501,
+        "evaluable": true
+      },
+      {
+        "checkpoint": 291403,
+        "stratum": "S1",
+        "route": "P",
+        "median_spearman": 0.9996584991035601,
+        "evaluable": true
+      },
+      {
+        "checkpoint": 291403,
+        "stratum": "S2",
+        "route": "CF",
+        "median_spearman": 0.999615811491505,
+        "evaluable": true
+      },
+      {
+        "checkpoint": 291403,
+        "stratum": "S2",
+        "route": "P",
+        "median_spearman": 0.999615811491505,
+        "evaluable": true
+      },
+      {
+        "checkpoint": 291404,
+        "stratum": "S1",
+        "route": "CF",
+        "median_spearman": 0.9998719371638352,
+        "evaluable": true
+      },
+      {
+        "checkpoint": 291404,
+        "stratum": "S1",
+        "route": "P",
+        "median_spearman": 0.9998719371638352,
+        "evaluable": true
+      },
+      {
+        "checkpoint": 291404,
+        "stratum": "S2",
+        "route": "CF",
+        "median_spearman": 0.9995304362673951,
+        "evaluable": true
+      },
+      {
+        "checkpoint": 291404,
+        "stratum": "S2",
+        "route": "P",
+        "median_spearman": 0.9994023734312303,
+        "evaluable": true
+      }
+    ],
+    "dose_cells": [
+      {
+        "checkpoint": 291402,
+        "stratum": "S1",
+        "median_E_local": 0.41870611820360165,
+        "median_C_R_midpoint": 0.24066578830389723,
+        "median_E_int32": 1.787961783514283e-06,
+        "median_I32_I16_relative": 2.015282228590726e-06,
+        "numerical_valid": true
+      },
+      {
+        "checkpoint": 291402,
+        "stratum": "S2",
+        "median_E_local": 1.158906915736073,
+        "median_C_R_midpoint": 0.5202290892927939,
+        "median_E_int32": 2.2385326175090946e-06,
+        "median_I32_I16_relative": 4.122722494563886e-05,
+        "numerical_valid": true
+      },
+      {
+        "checkpoint": 291403,
+        "stratum": "S1",
+        "median_E_local": 0.24801350544392803,
+        "median_C_R_midpoint": 0.14382717222512414,
+        "median_E_int32": 1.2561353869176695e-06,
+        "median_I32_I16_relative": 4.6669720156166376e-07,
+        "numerical_valid": true
+      },
+      {
+        "checkpoint": 291403,
+        "stratum": "S2",
+        "median_E_local": 0.8455275973556116,
+        "median_C_R_midpoint": 0.512394447000273,
+        "median_E_int32": 1.990179192065383e-06,
+        "median_I32_I16_relative": 2.678446910377274e-05,
+        "numerical_valid": true
+      },
+      {
+        "checkpoint": 291404,
+        "stratum": "S1",
+        "median_E_local": 0.18882758804850192,
+        "median_C_R_midpoint": 0.07963293432461849,
+        "median_E_int32": 3.99798020341674e-06,
+        "median_I32_I16_relative": 1.2474715452841873e-07,
+        "numerical_valid": true
+      },
+      {
+        "checkpoint": 291404,
+        "stratum": "S2",
+        "median_E_local": 0.6170871096871906,
+        "median_C_R_midpoint": 0.2790494749130188,
+        "median_E_int32": 2.5874138185048722e-06,
+        "median_I32_I16_relative": 1.998082695113344e-06,
+        "numerical_valid": true
+      }
+    ],
+    "contrastability_floor": 1.807543226620821e-05
+  },
+  "additional_target_tensor_loads": 0,
+  "additional_target_model_executions": 0,
+  "independence": "Fresh reviewer context; newly authored NumPy script; no producer or legacy audit imports; source read only as frozen behavioral evidence.",
+  "limitations": [
+    "Only 5 of 33 path operators are persisted; q/operator identity checked at every persisted operator node, all 33 q nodes used in exact Simpson reconstruction."
+  ],
+  "numpy_version": "2.4.4"
+}

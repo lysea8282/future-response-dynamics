@@ -1,0 +1,33 @@
+{
+  "alignment": {
+    "labels": [
+      "ALIGNMENT_REPLICATED",
+      "ALIGNMENT_NOT_REPLICATED",
+      "ALIGNMENT_NOT_EVALUABLE"
+    ],
+    "pass": ">=2/3 checkpoints positive in both S1/S2 and family medians positive in both strata"
+  },
+  "causal": {
+    "labels": [
+      "LOCAL_OPERATOR_CAUSAL_PREDICTIVENESS_REPLICATED",
+      "LOCAL_OPERATOR_CAUSAL_PREDICTIVENESS_NOT_REPLICATED",
+      "LOCAL_OPERATOR_CAUSAL_PREDICTIVENESS_NOT_EVALUABLE"
+    ],
+    "pass": ">=2/3 checkpoints have all S1/CF,S1/P,S2/CF,S2/P median Spearman >0.70"
+  },
+  "full_dose": {
+    "labels": [
+      "FULL_DOSE_FUNCTIONAL_RECONFIGURATION_REPLICATED",
+      "FULL_DOSE_FUNCTIONAL_RECONFIGURATION_NOT_REPLICATED",
+      "FULL_DOSE_FUNCTIONAL_RECONFIGURATION_NOT_EVALUABLE"
+    ],
+    "pass": "all six numerical-validity cells and >=2/3 checkpoints E_local>0.10 and C_R(.5)>0.10 in both strata"
+  },
+  "overall": {
+    "FAIL": "integrity valid and alignment not replicated",
+    "NOT_EVALUABLE": "identity, route, contrastability, derivative/numerical, or artifact integrity failure",
+    "PARTIAL": "integrity valid and one or two required components pass, unless alignment fails",
+    "PASS": "all three required components pass"
+  },
+  "supporting_cannot_rescue": true
+}

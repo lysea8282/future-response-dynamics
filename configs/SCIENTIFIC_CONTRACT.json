@@ -1,0 +1,128 @@
+{
+  "Delta_align": "S_sub(P,CF)-S_sub(F,CF)",
+  "Delta_d": "d_R(F,CF)-d_R(P,CF); supporting only",
+  "aggregation": "checkpoint-first; both strata; at least 2 of 3 checkpoints; alignment also family median >0 in S1 and S2",
+  "anchor": 7,
+  "anchor_decode_excluded": true,
+  "autonomous_release": {
+    "decoder_feedback": false,
+    "future_observations": false,
+    "hidden_clamp": false,
+    "physical_clamp": false,
+    "repeated_patch": false,
+    "teacher_forcing": false
+  },
+  "beta": 1.0,
+  "carrier_dimension": 192,
+  "causal": {
+    "direction_counts": {
+      "Paper1_U4": 4,
+      "bottom_null_weighted_R": 4,
+      "random_orthogonal": 32,
+      "top_Phi": 4,
+      "top_anchor_decoder": 4,
+      "top_weighted_R": 4
+    },
+    "epsilon": "0.10*||zP-zF||2",
+    "gamma_local": 0.1,
+    "rng_literal": "P2_FFD_FRESH_CAUSAL_V1|checkpoint|unit_id|route|direction_index",
+    "threshold": 0.7
+  },
+  "d_R": "||RA-RB||F/(sqrt(||RA||F||RB||F)+1e-12)",
+  "dose_path": {
+    "definition": "z(gamma)=zF+gamma*(U4@c_hat)",
+    "gamma_I": [
+      0.0,
+      0.03125,
+      0.0625,
+      0.09375,
+      0.125,
+      0.15625,
+      0.1875,
+      0.21875,
+      0.25,
+      0.28125,
+      0.3125,
+      0.34375,
+      0.375,
+      0.40625,
+      0.4375,
+      0.46875,
+      0.5,
+      0.53125,
+      0.5625,
+      0.59375,
+      0.625,
+      0.65625,
+      0.6875,
+      0.71875,
+      0.75,
+      0.78125,
+      0.8125,
+      0.84375,
+      0.875,
+      0.90625,
+      0.9375,
+      0.96875,
+      1.0
+    ],
+    "gamma_R": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "simpson": [
+      8,
+      16,
+      32
+    ]
+  },
+  "forbidden_methods": [
+    "Hessian",
+    "Integrated Hessian",
+    "HVP",
+    "CLV/Oseledets",
+    "LIB",
+    "DAS",
+    "gate-level path tracing",
+    "five-block decomposition",
+    "random coordinate partition null",
+    "history/lambda",
+    "VLA",
+    "new training",
+    "new rank selection",
+    "new horizon"
+  ],
+  "full_dose_thresholds": {
+    "median_C_R_midpoint_gt": 0.1,
+    "median_E_int32_lt": 0.01,
+    "median_E_local_gt": 0.1,
+    "median_I32_I16_relative_lt": 0.005
+  },
+  "future_output_shape": [
+    64
+  ],
+  "future_transitions": 8,
+  "mechanical_rank_ceiling": 64,
+  "operator_shape": [
+    64,
+    192
+  ],
+  "r_CF_rule": "minimum native-CF rank reaching 90% squared singular-value energy; reused for F-vs-CF and P-vs-CF",
+  "rank": 4,
+  "routes": {
+    "CF": "native counterfactual carrier",
+    "F": "factual carrier",
+    "P": "zF + U4 @ c_hat; one shot after anchor assimilation"
+  },
+  "schema_version": "p2-ffd-scientific-contract-v1",
+  "supporting_not_gating": [
+    "Delta_d",
+    "S2-vs-S1 regime contrasts",
+    "spectra/r90",
+    "intermediate dose progression",
+    "integrated-Jacobian identity alone"
+  ]
+}

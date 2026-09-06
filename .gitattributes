@@ -1,0 +1,3 @@
+# Preserve hash-bound frozen bytes on every checkout.
+* -text
+*.npy binary

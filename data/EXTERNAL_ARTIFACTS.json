@@ -1,0 +1,112 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "certified_002/causal_direction_vectors.npz",
+      "role": "raw certified numerical operand store",
+      "sha256": "261931B5401748290AFCEDBF8AC59FD6F4F4C302255D80EC0D228D3E265D13A8",
+      "size_bytes": 15335712,
+      "needed_for_exact_raw_reproduction": true,
+      "availability": "NOT_HOSTED; human must select artifact host",
+      "url": null
+    },
+    {
+      "artifact_id": "certified_002/causal_future_vectors.npz",
+      "role": "raw certified numerical operand store",
+      "sha256": "48284BF029BA4BF7AA075DF2E90A845A8A8ED8ED80B45C417938BDE5E5C83922",
+      "size_bytes": 15336784,
+      "needed_for_exact_raw_reproduction": true,
+      "availability": "NOT_HOSTED; human must select artifact host",
+      "url": null
+    },
+    {
+      "artifact_id": "certified_002/direction_construction.npz",
+      "role": "raw certified numerical operand store",
+      "sha256": "44C0E8A14468961B01B1EF443557F0B2310B663045947C4938B50FA1C1D5B2B3",
+      "size_bytes": 29639404,
+      "needed_for_exact_raw_reproduction": true,
+      "availability": "NOT_HOSTED; human must select artifact host",
+      "url": null
+    },
+    {
+      "artifact_id": "certified_002/full_dose_operators.npz",
+      "role": "raw certified numerical operand store",
+      "sha256": "8668387273D14ACBBC83F4FEB842009CD103BA3886A97740D4F44F2926E4BB6A",
+      "size_bytes": 188743952,
+      "needed_for_exact_raw_reproduction": true,
+      "availability": "NOT_HOSTED; human must select artifact host",
+      "url": null
+    },
+    {
+      "artifact_id": "certified_002/full_dose_vectors.npz",
+      "role": "raw certified numerical operand store",
+      "sha256": "1B194D36B8632BFF0C6E13029B1B59AE7B4EB05979737195058AB2B87443321E",
+      "size_bytes": 688656,
+      "needed_for_exact_raw_reproduction": true,
+      "availability": "NOT_HOSTED; human must select artifact host",
+      "url": null
+    },
+    {
+      "artifact_id": "certified_002/path_integration_vectors.npz",
+      "role": "raw certified numerical operand store",
+      "sha256": "A57696E0D1016B22A6DB9B020871E733D6EEBF5D374411B5A78DDC4487C4EC56",
+      "size_bytes": 590102,
+      "needed_for_exact_raw_reproduction": true,
+      "availability": "NOT_HOSTED; human must select artifact host",
+      "url": null
+    },
+    {
+      "artifact_id": "certified_002/path_q_grid.npz",
+      "role": "raw certified numerical operand store",
+      "sha256": "15188A9C59DB566EACF9489E56529BF9F649B8DAE50C96A7BDFC8B3B8C20EF22",
+      "size_bytes": 6488330,
+      "needed_for_exact_raw_reproduction": true,
+      "availability": "NOT_HOSTED; human must select artifact host",
+      "url": null
+    },
+    {
+      "artifact_id": "certified_002/route_operators.npz",
+      "role": "raw certified numerical operand store",
+      "sha256": "D5FFB663EA76A3201DB6E9C79AC8F54E1A42FE9C581675EEC8586E2210D4FF65",
+      "size_bytes": 113246480,
+      "needed_for_exact_raw_reproduction": true,
+      "availability": "NOT_HOSTED; human must select artifact host",
+      "url": null
+    },
+    {
+      "artifact_id": "checkpoint_seed_291402",
+      "role": "frozen trained model; excluded from Git regardless of size",
+      "sha256": "23CD9839FF8F4163518D99562CB4B64F428504E3EB2E0B1AE4B031F962CF597B",
+      "size_bytes": 2007177,
+      "needed_for_exact_raw_reproduction": true,
+      "availability": "NOT_HOSTED; binding read only, no tensor load",
+      "url": null
+    },
+    {
+      "artifact_id": "checkpoint_seed_291403",
+      "role": "frozen trained model; excluded from Git regardless of size",
+      "sha256": "8CD0A0F3EC5577F065DDA58806D5E666C2B0F2850A313EF5FB0A6783181D79F5",
+      "size_bytes": 2007177,
+      "needed_for_exact_raw_reproduction": true,
+      "availability": "NOT_HOSTED; binding read only, no tensor load",
+      "url": null
+    },
+    {
+      "artifact_id": "checkpoint_seed_291404",
+      "role": "frozen trained model; excluded from Git regardless of size",
+      "sha256": "91A04CF24E00A71959856DBC589CC938E21A02B70DDF9B0025F0589DEE3C3A5D",
+      "size_bytes": 2007177,
+      "needed_for_exact_raw_reproduction": true,
+      "availability": "NOT_HOSTED; binding read only, no tensor load",
+      "url": null
+    },
+    {
+      "artifact_id": "fresh_population_512",
+      "role": "frozen matched records; external with raw reproduction materials",
+      "sha256": "B1DE126F60F2C4A30CF545094D8339AF52DBB096E7D6C339AD6754F747CF885C",
+      "size_bytes": 6946046,
+      "needed_for_exact_raw_reproduction": true,
+      "availability": "NOT_HOSTED",
+      "url": null
+    }
+  ]
+}
