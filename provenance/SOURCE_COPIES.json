@@ -43,9 +43,11 @@
     "repo_relative_path": "src/future_response_dynamics/aggregation.py",
     "source_logical_id": "RC_V5/formal_runner.py",
     "source_sha256": "DDB00B3E13047A303D393601E1612A51214A4B7484CDA058787DEF04C25EAF8C",
-    "public_copy_sha256": "F0FA21CB2568F35945613CE9B40B0424162CC630EF317A3763EEB3F8CBB02E6E",
+    "public_copy_sha256": "78E12357128E09B8302CF60ECC7CDF66D40A0C770D5F51A225C4DADC24CCB8B8",
     "scientific_role": "formal_run: nested med through support_counts; pure cell aggregation only",
-    "transformation": "SCIENCE_ONLY_AST_EXTRACTION; NO_EXECUTION"
+    "transformation": "SCIENCE_ONLY_AST_EXTRACTION; remove one accidentally retained undefined write_json/ artifact_root persistence call; numerical AST statements unchanged",
+    "prior_public_copy_sha256": "F0FA21CB2568F35945613CE9B40B0424162CC630EF317A3763EEB3F8CBB02E6E",
+    "validation": "tests/test_manuscript_sync.py::test_reaggregate_released_units; public released unit rows reproduce all frozen cells and checkpoint counts"
   },
   {
     "repo_relative_path": "src/future_response_dynamics/causal_raw.py",

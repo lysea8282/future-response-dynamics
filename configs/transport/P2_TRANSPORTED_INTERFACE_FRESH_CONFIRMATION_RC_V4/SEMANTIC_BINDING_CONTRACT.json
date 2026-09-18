@@ -1,0 +1,20 @@
+{
+  "schema_version": "p2-semantic-binding-v4",
+  "arrays": [
+    "F",
+    "V",
+    "pred",
+    "U",
+    "actions"
+  ],
+  "comparison": "EXACT_ARRAY_EQUAL",
+  "expected_source": "Frozen registry order + hash-bound unit payload, checkpoint and interface; prefix factual assimilation and original factual_transport kernel",
+  "prohibited_dependencies": [
+    "producer positional metadata",
+    "later P",
+    "later CF",
+    "decoder outcomes",
+    "scientific classification"
+  ],
+  "scope": "Targeted factual anchor/tangent recomputation, not full seven-route assay"
+}

@@ -1,2 +1,4 @@
 numpy==2.4.4
 torch==2.11.0+cu128
+# Public GRU paired-statistics reference module; observed final-readiness environment.
+scipy==1.17.1

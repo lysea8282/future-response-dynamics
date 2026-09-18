@@ -1,0 +1,471 @@
+{
+  "run_id": "P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A",
+  "utc_freeze_timestamp": "2026-09-15T00:20:29.511660+00:00",
+  "lower_level_artifact_hashes": [
+    {
+      "path": "Stage2_V3.2/artifacts/stage2_v3_2_effective_state/P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A/392001/MATCHED.npz",
+      "size_bytes": 11772798,
+      "sha256": "D11127F689642BBDDC1F279AEB335E5D114181EBEA440CCA6A6278D72D12AF16"
+    },
+    {
+      "path": "Stage2_V3.2/artifacts/stage2_v3_2_effective_state/P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A/392001/RELEASED.npz",
+      "size_bytes": 7995905,
+      "sha256": "8441F927D24C91BF25ABF3B89E5D9593ADA3E8508D27AB484D5D40E77DD9FE49"
+    },
+    {
+      "path": "Stage2_V3.2/artifacts/stage2_v3_2_effective_state/P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A/392001/UNIT_TIME_ROWS.json",
+      "size_bytes": 717130,
+      "sha256": "813EA5001DE5C96848B85C2271D689F06777026F5FDB32B5501DE87B6587071D"
+    },
+    {
+      "path": "Stage2_V3.2/artifacts/stage2_v3_2_effective_state/P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A/392001/TRACE.json",
+      "size_bytes": 708,
+      "sha256": "3703F334FF671809D4EE9FA523746819ABB28119FCDA23E5E96CB93784401E87"
+    },
+    {
+      "path": "Stage2_V3.2/artifacts/stage2_v3_2_effective_state/P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A/392002/MATCHED.npz",
+      "size_bytes": 11752243,
+      "sha256": "6A441C101E353D91101F11BE669EF75F0D50314618AEC4EB76C194519B5875FE"
+    },
+    {
+      "path": "Stage2_V3.2/artifacts/stage2_v3_2_effective_state/P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A/392002/RELEASED.npz",
+      "size_bytes": 7973942,
+      "sha256": "8C63ADCFBD055646E6556FD6EBDA463237E7D7FDAAFE0972942FF26003D6A623"
+    },
+    {
+      "path": "Stage2_V3.2/artifacts/stage2_v3_2_effective_state/P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A/392002/UNIT_TIME_ROWS.json",
+      "size_bytes": 717356,
+      "sha256": "15ABB09D8F5776555AB4D201D0251EF4C7C8899FE29D58F8C4E70E54C2BABC20"
+    },
+    {
+      "path": "Stage2_V3.2/artifacts/stage2_v3_2_effective_state/P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A/392002/TRACE.json",
+      "size_bytes": 708,
+      "sha256": "2F1562D9CE2655061E1CE4F3DFAEFEC559B198E620D87862348542016A149655"
+    },
+    {
+      "path": "Stage2_V3.2/artifacts/stage2_v3_2_effective_state/P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A/392003/MATCHED.npz",
+      "size_bytes": 11768798,
+      "sha256": "75AA8F7BB369D663C89075381AFA3A8DD494AA55A3A76E45986AE67749CF1CB9"
+    },
+    {
+      "path": "Stage2_V3.2/artifacts/stage2_v3_2_effective_state/P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A/392003/RELEASED.npz",
+      "size_bytes": 8002297,
+      "sha256": "D5D5206B5D2638B666432EE0CF86EABF525D576D341D7443AAFD04C5F660333C"
+    },
+    {
+      "path": "Stage2_V3.2/artifacts/stage2_v3_2_effective_state/P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A/392003/UNIT_TIME_ROWS.json",
+      "size_bytes": 717026,
+      "sha256": "244A0572B430E516A96C51285A6D6B3D6D81954C743D1A914DB45472DDDE22C9"
+    },
+    {
+      "path": "Stage2_V3.2/artifacts/stage2_v3_2_effective_state/P2_LSTM_PRIV_R6_TRANSPORT_20260915T000536Z_7187300A/392003/TRACE.json",
+      "size_bytes": 708,
+      "sha256": "58A5175C375BE33A205A3E95F591BA8447BB0031DA28FCB9BE4FFEB80C9791D8"
+    }
+  ],
+  "audit_reducer_source_sha256": "82B8E8D1CB8E73BAACD67A86DBDFF49AF2ACBADE19117B08CAF37BDFF973CF9B",
+  "scientific_config": {
+    "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/release_candidates/P2_LSTM_PRIVILEGED_RANK6_TRANSPORT_CONFIRMATION_RC_V1/configs/TRANSPORT_CORE_CONFIG.json",
+    "sha256": "31205537A15F692EDB08DBE6F1DF12E2C6D38A2F10AD1B455D5C514266AC7A03",
+    "size_bytes": 2751
+  },
+  "registry": {
+    "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_RC_V2/fresh_assets/FRESH_UNIT_REGISTRY.json",
+    "sha256": "DD08416CCFDD30A1974146C87E9CF1581815E9978D9646B50BB8120BBC725D60",
+    "size_bytes": 18454
+  },
+  "checkpoints": [
+    {
+      "checkpoint": 392001,
+      "strata": {
+        "S1": {
+          "unit_count": 32,
+          "unit_times": 320,
+          "contrast_fraction": 1.0,
+          "positive_unit_fraction": 1.0,
+          "capture": 0.9746280297604228,
+          "recovery": 0.9421038124884313,
+          "eT_contrast": 0.055505193840337655,
+          "eF_contrast": 0.152732211937428,
+          "raw_medians": {
+            "F": 0.152732211937428,
+            "O_PATCH": 0.04554770799913214,
+            "CF": 0.0,
+            "T": 0.055505193840337655
+          },
+          "numerical_valid": true,
+          "contrast_units": 32,
+          "contrast_unit_times": 320,
+          "bands": {
+            "early": {
+              "capture": 0.9898933798007225,
+              "recovery": 0.9802147399540279,
+              "raw_medians": {
+                "F": 0.1384174449860081,
+                "O_PATCH": 0.04086848154298312,
+                "CF": 0.0,
+                "T": 0.04354836396367674
+              }
+            },
+            "middle": {
+              "capture": 0.9757532768825947,
+              "recovery": 0.947257318713733,
+              "raw_medians": {
+                "F": 0.15044447118370147,
+                "O_PATCH": 0.044722583571367464,
+                "CF": 0.0,
+                "T": 0.0542891177340247
+              }
+            },
+            "late": {
+              "capture": 0.9603332193657529,
+              "recovery": 0.9041793577655735,
+              "raw_medians": {
+                "F": 0.16809812898479876,
+                "O_PATCH": 0.05100648299171186,
+                "CF": 0.0,
+                "T": 0.06553982915542564
+              }
+            }
+          },
+          "gates": {
+            "contrastable_coverage": true,
+            "positive_unit_coverage": true,
+            "capture": true,
+            "recovery": true,
+            "raw_T_vs_F": true,
+            "numerical": true
+          },
+          "supports": true
+        },
+        "S2": {
+          "unit_count": 32,
+          "unit_times": 320,
+          "contrast_fraction": 0.95,
+          "positive_unit_fraction": 1.0,
+          "capture": 0.973198838199204,
+          "recovery": 0.9826949839261221,
+          "eT_contrast": 0.10837611293950986,
+          "eF_contrast": 0.24385191136962567,
+          "raw_medians": {
+            "F": 0.23511847317354204,
+            "O_PATCH": 0.10593816891640714,
+            "CF": 0.0,
+            "T": 0.10976945906506037
+          },
+          "numerical_valid": true,
+          "contrast_units": 32,
+          "contrast_unit_times": 304,
+          "bands": {
+            "early": {
+              "capture": 0.9950963882163908,
+              "recovery": 1.0049714455561478,
+              "raw_medians": {
+                "F": 0.23076370792453602,
+                "O_PATCH": 0.09741377297050216,
+                "CF": 0.0,
+                "T": 0.09819616151840217
+              }
+            },
+            "middle": {
+              "capture": 0.9770622384867689,
+              "recovery": 0.9780487397547155,
+              "raw_medians": {
+                "F": 0.2567397981105164,
+                "O_PATCH": 0.10534983116849272,
+                "CF": 0.0,
+                "T": 0.11252572682250728
+              }
+            },
+            "late": {
+              "capture": 0.8660602537766385,
+              "recovery": 0.8321659349772836,
+              "raw_medians": {
+                "F": 0.20244938362052758,
+                "O_PATCH": 0.11110000371397172,
+                "CF": 0.0,
+                "T": 0.14366620298079605
+              }
+            }
+          },
+          "gates": {
+            "contrastable_coverage": true,
+            "positive_unit_coverage": true,
+            "capture": true,
+            "recovery": true,
+            "raw_T_vs_F": true,
+            "numerical": true
+          },
+          "supports": true
+        }
+      },
+      "supports": true
+    },
+    {
+      "checkpoint": 392002,
+      "strata": {
+        "S1": {
+          "unit_count": 32,
+          "unit_times": 320,
+          "contrast_fraction": 1.0,
+          "positive_unit_fraction": 1.0,
+          "capture": 0.9360458189487938,
+          "recovery": 0.8940339322856091,
+          "eT_contrast": 0.053457346343606785,
+          "eF_contrast": 0.15756267341342584,
+          "raw_medians": {
+            "F": 0.15756267341342584,
+            "O_PATCH": 0.03829311328675333,
+            "CF": 0.0,
+            "T": 0.053457346343606785
+          },
+          "numerical_valid": true,
+          "contrast_units": 32,
+          "contrast_unit_times": 320,
+          "bands": {
+            "early": {
+              "capture": 0.9735564884946665,
+              "recovery": 0.966226287086756,
+              "raw_medians": {
+                "F": 0.14321572493360907,
+                "O_PATCH": 0.03584416648958292,
+                "CF": 0.0,
+                "T": 0.040003785186682045
+              }
+            },
+            "middle": {
+              "capture": 0.9476545133624307,
+              "recovery": 0.9033453353199339,
+              "raw_medians": {
+                "F": 0.15532434690853508,
+                "O_PATCH": 0.037648223227609884,
+                "CF": 0.0,
+                "T": 0.05035868295208995
+              }
+            },
+            "late": {
+              "capture": 0.8954910844236759,
+              "recovery": 0.8088255564433355,
+              "raw_medians": {
+                "F": 0.17357669049839,
+                "O_PATCH": 0.0428215406156988,
+                "CF": 0.0,
+                "T": 0.070721839562091
+              }
+            }
+          },
+          "gates": {
+            "contrastable_coverage": true,
+            "positive_unit_coverage": true,
+            "capture": true,
+            "recovery": true,
+            "raw_T_vs_F": true,
+            "numerical": true
+          },
+          "supports": true
+        },
+        "S2": {
+          "unit_count": 32,
+          "unit_times": 320,
+          "contrast_fraction": 1.0,
+          "positive_unit_fraction": 1.0,
+          "capture": 0.9670667131400709,
+          "recovery": 0.9764930104119878,
+          "eT_contrast": 0.09257603463729683,
+          "eF_contrast": 0.213315005984026,
+          "raw_medians": {
+            "F": 0.213315005984026,
+            "O_PATCH": 0.08516582423124473,
+            "CF": 0.0,
+            "T": 0.09257603463729683
+          },
+          "numerical_valid": true,
+          "contrast_units": 32,
+          "contrast_unit_times": 320,
+          "bands": {
+            "early": {
+              "capture": 0.9916584150003405,
+              "recovery": 0.9970844490766357,
+              "raw_medians": {
+                "F": 0.2202237908077052,
+                "O_PATCH": 0.07726667894287098,
+                "CF": 0.0,
+                "T": 0.08522928123863016
+              }
+            },
+            "middle": {
+              "capture": 0.9586692126787247,
+              "recovery": 0.9708707952788929,
+              "raw_medians": {
+                "F": 0.24253588253833797,
+                "O_PATCH": 0.08582516758063119,
+                "CF": 0.0,
+                "T": 0.0955608905988111
+              }
+            },
+            "late": {
+              "capture": 0.9133557608662899,
+              "recovery": 0.9012229415298126,
+              "raw_medians": {
+                "F": 0.18967489399096027,
+                "O_PATCH": 0.09429084437001897,
+                "CF": 0.0,
+                "T": 0.10958280064958581
+              }
+            }
+          },
+          "gates": {
+            "contrastable_coverage": true,
+            "positive_unit_coverage": true,
+            "capture": true,
+            "recovery": true,
+            "raw_T_vs_F": true,
+            "numerical": true
+          },
+          "supports": true
+        }
+      },
+      "supports": true
+    },
+    {
+      "checkpoint": 392003,
+      "strata": {
+        "S1": {
+          "unit_count": 32,
+          "unit_times": 320,
+          "contrast_fraction": 1.0,
+          "positive_unit_fraction": 1.0,
+          "capture": 0.9966894016209074,
+          "recovery": 0.985735787984352,
+          "eT_contrast": 0.06704103855596383,
+          "eF_contrast": 0.13986781393127135,
+          "raw_medians": {
+            "F": 0.13986781393127135,
+            "O_PATCH": 0.0668689602805537,
+            "CF": 0.0,
+            "T": 0.06704103855596383
+          },
+          "numerical_valid": true,
+          "contrast_units": 32,
+          "contrast_unit_times": 320,
+          "bands": {
+            "early": {
+              "capture": 0.9967594482814569,
+              "recovery": 0.9964648748430911,
+              "raw_medians": {
+                "F": 0.12608806165061118,
+                "O_PATCH": 0.060093405179225415,
+                "CF": 0.0,
+                "T": 0.060641091639060334
+              }
+            },
+            "middle": {
+              "capture": 0.9968026566238438,
+              "recovery": 0.987235402486747,
+              "raw_medians": {
+                "F": 0.13763871855527043,
+                "O_PATCH": 0.06578413280904027,
+                "CF": 0.0,
+                "T": 0.06604068623646497
+              }
+            },
+            "late": {
+              "capture": 0.995915995744892,
+              "recovery": 0.9773622752178523,
+              "raw_medians": {
+                "F": 0.15436462599950307,
+                "O_PATCH": 0.07307674464694355,
+                "CF": 0.0,
+                "T": 0.0731866962114683
+              }
+            }
+          },
+          "gates": {
+            "contrastable_coverage": true,
+            "positive_unit_coverage": true,
+            "capture": true,
+            "recovery": true,
+            "raw_T_vs_F": true,
+            "numerical": true
+          },
+          "supports": true
+        },
+        "S2": {
+          "unit_count": 32,
+          "unit_times": 320,
+          "contrast_fraction": 1.0,
+          "positive_unit_fraction": 1.0,
+          "capture": 0.9711197358565228,
+          "recovery": 0.9591261188272278,
+          "eT_contrast": 0.07438406832201545,
+          "eF_contrast": 0.2419408403887526,
+          "raw_medians": {
+            "F": 0.2419408403887526,
+            "O_PATCH": 0.06689554220178476,
+            "CF": 0.0,
+            "T": 0.07438406832201545
+          },
+          "numerical_valid": true,
+          "contrast_units": 32,
+          "contrast_unit_times": 320,
+          "bands": {
+            "early": {
+              "capture": 0.9945972013824815,
+              "recovery": 1.0018570683264938,
+              "raw_medians": {
+                "F": 0.23609642955188137,
+                "O_PATCH": 0.06162648018592506,
+                "CF": 0.0,
+                "T": 0.06213276689318447
+              }
+            },
+            "middle": {
+              "capture": 0.9766798118003277,
+              "recovery": 0.9648219991122642,
+              "raw_medians": {
+                "F": 0.26577599003419594,
+                "O_PATCH": 0.06652172311052552,
+                "CF": 0.0,
+                "T": 0.0727074958434259
+              }
+            },
+            "late": {
+              "capture": 0.867814163533881,
+              "recovery": 0.9212922609301775,
+              "raw_medians": {
+                "F": 0.21061773502537148,
+                "O_PATCH": 0.06915454792703532,
+                "CF": 0.0,
+                "T": 0.08062837740215423
+              }
+            }
+          },
+          "gates": {
+            "contrastable_coverage": true,
+            "positive_unit_coverage": true,
+            "capture": true,
+            "recovery": true,
+            "raw_T_vs_F": true,
+            "numerical": true
+          },
+          "supports": true
+        }
+      },
+      "supports": true
+    }
+  ],
+  "checkpoint_support_vector": [
+    true,
+    true,
+    true
+  ],
+  "panel_support_count": 3,
+  "panel_label": "STRONG_CROSS_ARCHITECTURE_TRANSPORT_CORE_SUPPORT",
+  "operational_semantic_interface_established": false,
+  "semantic_specificity_established": false,
+  "rank6_sufficient_state_claim": false,
+  "stored_summaries_opened": false,
+  "prompt_expected_result_preexposure": true,
+  "nesting": "Within-unit temporal median then across-unit median; recovery and raw T/F comparisons use A>floor mask; capture and positive-unit use all ten times.",
+  "lower_level_checks_sha256": "A9C293C608CFDADE3765881FF298BF7ED5237E5C120E6B8FFF8627061C498417"
+}

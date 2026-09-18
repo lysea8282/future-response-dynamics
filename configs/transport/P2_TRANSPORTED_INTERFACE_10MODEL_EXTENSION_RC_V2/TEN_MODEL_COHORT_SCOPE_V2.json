@@ -1,0 +1,101 @@
+{
+  "task_id": "P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2",
+  "frozen_at": "2026-09-13T03:09:38.965951+00:00",
+  "fixed_training_sample_seed_ids": [
+    291405,
+    291406,
+    291407,
+    291410,
+    291411,
+    291412,
+    291413,
+    291414,
+    291415,
+    291416
+  ],
+  "new_trained_seed_ids": [
+    291410,
+    291411,
+    291412,
+    291413,
+    291414,
+    291415,
+    291416
+  ],
+  "baseline_eligible_seed_ids": [
+    291405,
+    291406,
+    291407,
+    291410,
+    291411,
+    291412,
+    291413,
+    291415,
+    291416
+  ],
+  "mechanism_evaluation_seed_ids": [
+    291410,
+    291411,
+    291412,
+    291413,
+    291415,
+    291416
+  ],
+  "baseline_ineligible_records": [
+    {
+      "seed": 291414,
+      "status": "BASELINE_INELIGIBLE",
+      "label": "BASELINE_INELIGIBLE_UNDER_FROZEN_HEALTH_GATE",
+      "checkpoint": {
+        "absolute_path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V1\\fresh_assets\\checkpoints\\seed_291414\\P2-TRANSPORTED-INTERFACE-EXTENSION__seed_291414.pt",
+        "size_bytes": 2007131,
+        "sha256": "AF0869D0E00992EF18BA04146B62AEAEF36347DFFA2DAED5CDB703B2B0C4CFB0",
+        "seed": 291414,
+        "state_hash": "B56C4D57E52C40E24B4FFBCE3F9CD713A528B1ABD86CA023C9E67ED3DDF865BF",
+        "training_status": "COMPLETE",
+        "baseline_adequacy_pass": false
+      },
+      "health_evidence": {
+        "absolute_path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V1\\tests_evidence\\RESOURCE_ACCEPTANCE.json",
+        "path": "World-model/Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V1/tests_evidence/RESOURCE_ACCEPTANCE.json",
+        "size_bytes": 36933,
+        "sha256": "42A34EB30E36F51C2333CB6D3B7E13B227A44F86DE5014FCBF4B6CDDA9795D98"
+      },
+      "full_unit_evidence": {
+        "absolute_path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V1\\working\\resource_acceptance\\BASELINE_UNIT_RECORDS.jsonl",
+        "path": "World-model/Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V1/working/resource_acceptance/BASELINE_UNIT_RECORDS.jsonl",
+        "size_bytes": 13682338,
+        "sha256": "6BE0D703061310CC76A9E1FDCF21395572FAB7975A3F2C6F9FD7673DB158B9C4"
+      },
+      "health_failure": {
+        "cell": "S1/G1",
+        "joint_pass_count": 192,
+        "denominator": 256,
+        "joint_coverage": 0.75,
+        "required_coverage": 0.8
+      },
+      "mechanism_evaluation_allowed": false,
+      "mechanism_support": null,
+      "mechanism_status": "NOT_EVALUATED_BASELINE_INELIGIBLE",
+      "interface_status": "INELIGIBLE_NO_INTERFACE",
+      "included_in_training_denominator": true,
+      "end_to_end_support": false
+    }
+  ],
+  "retired_seed_ids": [
+    291408,
+    291409
+  ],
+  "replacement_performed": false,
+  "additional_seed_added": false,
+  "original_primary": {
+    "seed_ids": [
+      291405,
+      291406,
+      291407
+    ],
+    "support_count": 2,
+    "total": 3,
+    "replicated": true
+  }
+}

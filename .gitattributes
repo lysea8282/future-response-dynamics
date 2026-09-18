@@ -1,3 +1,8 @@
 # Preserve hash-bound frozen bytes on every checkout.
-* -text
+* -text whitespace=cr-at-eol
 *.npy binary
+# Preserve registered end-of-file blank lines in these exact frozen source copies.
+experiments/tangent_transport/gru/source/route_construction.py whitespace=cr-at-eol,-blank-at-eof
+experiments/tangent_transport/gru/source/sham_controls.py whitespace=cr-at-eol,-blank-at-eof
+experiments/tangent_transport/gru/source/sham_kernel.py whitespace=cr-at-eol,-blank-at-eof
+model/structured_gru/route_construction.py whitespace=cr-at-eol,-blank-at-eof

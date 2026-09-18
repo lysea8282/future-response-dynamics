@@ -30,7 +30,6 @@ def aggregate_certified_rows(unit_rows, causal_rows, dose_rows, checkpoint_seeds
     components["supporting_operator_distance"] = "FULL_OPERATOR_CONVERGENCE_SUPPORT_REPLICATED" if supporting_delta_d else "FULL_OPERATOR_CONVERGENCE_SUPPORT_NOT_REPLICATED"
     overall = classify_overall(components["alignment"], components["causal"], components["full_dose"], supporting_operator_distance=components["supporting_operator_distance"])
     summary = {"components": components, "overall": overall, "alignment_cells": alignment_cells, "causal_cells": causal_cells, "dose_cells": dose_cells, "contrastability_floor": contrast_floor}
-    write_json(artifact_root / "classification_summary.json", summary)
     support_counts = {
         "alignment": sum(all(any(c["checkpoint"] == seed and c["stratum"] == stratum and c["contrastable"] and c["median_Delta_align"] > 0 for c in alignment_cells) for stratum in ("S1", "S2")) for seed in config["checkpoint_seeds"]),
         "causal": sum(all(any(c["checkpoint"] == seed and c["stratum"] == stratum and c["route"] == route and c["evaluable"] and c["median_spearman"] > 0.70 for c in causal_cells) for stratum in ("S1", "S2") for route in ("CF", "P")) for seed in config["checkpoint_seeds"]),

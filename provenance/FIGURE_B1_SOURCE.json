@@ -1,0 +1,28 @@
+{
+  "status": "PRESENT_EXISTING_MANUSCRIPT_SOURCE",
+  "files": [
+    {
+      "public_file": "figures/appendix_b1/lstm_architecture.pptx",
+      "source": "manuscript/current/figure/Figure_B1_LSTM_Architecture_Styled_V2.pptx",
+      "source_sha256": "4FFEAFE04C5097FB618E0E08075880166BE6A02ED3C1C638207FC35ECCC7BA3B",
+      "public_sha256": "889FC2AA4E09C66F51F1D48AE273EEC55DE4A3C8037889E27B2D85ACA2C92D6D",
+      "operation": "Existing two-slide source; notes text and personal document metadata removed; slide XML untouched."
+    },
+    {
+      "public_file": "figures/appendix_b1/panel_a_600dpi.png",
+      "source": "manuscript/current/figure/Figure_B1_LSTM_Architecture_Styled_V2_Slide1_600dpi.png",
+      "source_sha256": "D7733B46BCE27CBA6D175DB259AE9297022744980CDB65C1CAC259AAD8FD8F57",
+      "public_sha256": "D7733B46BCE27CBA6D175DB259AE9297022744980CDB65C1CAC259AAD8FD8F57",
+      "operation": "Byte-identical copy of existing manuscript artwork, 10000 x 6667 px, 600 dpi."
+    },
+    {
+      "public_file": "figures/appendix_b1/panel_b_600dpi.png",
+      "source": "manuscript/current/figure/Figure_B1_LSTM_Architecture_Styled_V2_Slide2_600dpi.png",
+      "source_sha256": "9C21F4A70F2E1455C0A26C55F6AEB73E5A294661934A9FF06646A2C882926C48",
+      "public_sha256": "9C21F4A70F2E1455C0A26C55F6AEB73E5A294661934A9FF06646A2C882926C48",
+      "operation": "Byte-identical copy of existing manuscript artwork, 10000 x 6667 px, 600 dpi."
+    }
+  ],
+  "architecture_reference": "model/monolithic_lstm/lstm_model.py",
+  "note": "Architecture only: no privileged basis or operational map inferred from the schematic."
+}

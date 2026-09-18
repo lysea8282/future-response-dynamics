@@ -1,0 +1,162 @@
+{
+  "unit_count": 64,
+  "strata_counts": {
+    "S1": 32,
+    "S2": 32
+  },
+  "anchor": 7,
+  "horizon": 12,
+  "release_times": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "time_bands": {
+    "early": [
+      1,
+      2,
+      3
+    ],
+    "middle": [
+      4,
+      5,
+      6
+    ],
+    "late": [
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "device": "cuda:0",
+  "model_dtype": "float32",
+  "analysis_dtype": "float64",
+  "eps": 1e-24,
+  "rank_rtol": 2.288818359375e-05,
+  "contrast_floor": 1e-05,
+  "contrast_floor_role": "numerical normalized-RMSE floor only; no inherited semantic floor for eF-eP; historical M3 acceptance threshold is not an advantage floor",
+  "primitive_scale": [
+    [
+      0.6472089235448364,
+      0.6243559267725796,
+      0.4020797697996464,
+      0.39198204060541064
+    ],
+    [
+      0.6867968750008838,
+      0.5588272770105953,
+      0.40070553910696244,
+      0.3578059730529785
+    ]
+  ],
+  "normalizer_mean": [
+    0.010910557582974434,
+    0.008827612735331059,
+    -0.0013239462859928608,
+    0.00020721465989481658,
+    0.010910557582974434,
+    0.008827612735331059,
+    -0.0013239462859928608,
+    0.00020721465989481658
+  ],
+  "normalizer_std": [
+    0.6748629808425903,
+    0.6790841221809387,
+    0.2936058044433594,
+    0.2959529161453247,
+    0.6748629808425903,
+    0.6790841221809387,
+    0.2936058044433594,
+    0.2959529161453247
+  ],
+  "metric": "Paper1 M3: RMS over equally weighted remaining future steps and all 2x4 primitives after physical denormalization and division by frozen truth-only scales; target native-CF decode as explicitly requested, not simulator truth",
+  "engineering_limit": 1000000.0,
+  "arena_position_limit": 4.75,
+  "aggregation": "checkpoint-first; time-band median within each unit then across units; normalized recovery only where individual A>numerical floor; show counts, raw errors and paired effects",
+  "task_id": "P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_RC_V2",
+  "routes": [
+    "F",
+    "P",
+    "CF",
+    "T_correct",
+    "T_signflip",
+    "T_wrong_object",
+    "T_inplane_sham"
+  ],
+  "inplane_seed_literal": "P2_SEMANTIC_SPECIFICITY_SHAM_V1|{checkpoint}|{unit_id}|inplane",
+  "inplane_algorithm": "SHA256 UTF8 literal, first 8 digest bytes big-endian unsigned seed; NumPy PCG64 standard_normal(4); float64 Gram-Schmidt against full affine c; fallback basis least aligned with c if residual norm <=1e-12; normalize once; exactly one direction per unit",
+  "inplane_c": "full affine primitive_features with frozen feature normalization @ affine_weights; actual P0-F0 equals U4c up to float32 addition rounding",
+  "inplane_anchor": "(s @ U4.T)*norm(actual P0-F0), calculated float64 then cast float32",
+  "wrong_object": "other object; same axis and signed delta; factual_values baseline equals other factual velocity; counterfactual baseline+delta; full affine mapper; unchanged factual state",
+  "scale_formula": "target L2 norm / (transported sham L2 norm + 1e-24), float64 norm and scaling then float32 vector",
+  "extreme_scale_bounds": [
+    0.1,
+    10.0
+  ],
+  "extreme_scale_role": "descriptive flag only; never exclusion or direction reselection",
+  "norm_relative_tolerance": 1e-05,
+  "coefficient_orthogonality_tolerance": 1e-12,
+  "anchor_relative_tolerance": 1e-05,
+  "primary": "raw paired native-CF future error sham minus correct on every numerically evaluable unit-time; no contrastability filter",
+  "wins": "strict raw error correct < sham on all evaluable unit-times",
+  "formal": false,
+  "canonical_claim": false,
+  "scope": "INTEGRATION_TEST / INTEGRATION_REHEARSAL / NON_CONSUMING / SCIENTIFIC_SEMANTICS / TASK_LOCAL_ONLY",
+  "edit_slot_quota_per_stratum": 8,
+  "checkpoints": "allocated separately before training; no replacement",
+  "functional_raw_gate_population": "Among contrastable unit-times, within-unit temporal median then stratum median of eT and eF; additionally report unfiltered raw medians",
+  "unit_positive_advantage_gate": "within-unit median A > 0 on all registered times; at least 75% of all units",
+  "gates": {
+    "contrastable_unit_time_fraction_min_inclusive": 0.75,
+    "positive_unit_median_A_fraction_min_inclusive": 0.75,
+    "median_recovery_min_strict": 0.5,
+    "paired_effect_min_strict": 0.0,
+    "correct_win_fraction_min_strict": 0.75,
+    "required_supporting_checkpoints": 2,
+    "panel_each_stratum_checkpoint_median_effect_min_strict": 0.0,
+    "all_numerical_checks_required": true,
+    "transport_capture_min_strict": 0.8,
+    "holm_p_max_strict": 0.05,
+    "panel_each_stratum_checkpoint_median_capture_min_strict": 0.8
+  },
+  "no_seed_replacement": true,
+  "no_unit_replacement_on_outcomes": true,
+  "blind_formal_output": true,
+  "formal_execution_allowed_in_this_task": false,
+  "training_device": "cpu",
+  "analysis_device": "cuda:0",
+  "fresh_population_seed_literal": "P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_RC_V2|FRESH_EVALUATION_UNITS|V1",
+  "population_selection": "Canonical candidate stream; first 8 simulator-valid accepted candidates per object/axis slot in each stratum; no model conditioning; no retuning sign/amplitude support",
+  "unit_registry_frozen_before_model_evaluation": true,
+  "transport_capture": {
+    "formula": "||Q Q.T (P_k-F_k)||^2/(||P_k-F_k||^2+eps)",
+    "Q": "float64 thin SVD of raw factual Phi U4; inherited rank mask s > smax * (192*2**-23); no rank adaptation",
+    "population": "all numerically valid unit-times, nested temporal/unit medians",
+    "separation": "later P used for evaluation only; never passed to T construction"
+  },
+  "paired_statistics": {
+    "unit": "unit-level all-time median of raw paired sham-minus-correct effect; no unit-time pseudoreplication",
+    "wilcoxon": "two-sided exact conditional signed-rank distribution by dynamic programming, average ranks for exact abs-value ties, discard exact zeros (wilcox); all zeros p=1; no rounding of effects",
+    "holm_family": "six tests within each checkpoint: S1 x three shams plus S2 x three shams; monotone step-down adjusted p < 0.05 in every comparison",
+    "rank_biserial": "(Wplus-Wminus)/(Wplus+Wminus), zero denominator -> 0",
+    "bootstrap": "PCG64, 20000 unit-level with-replacement samples; median statistic; percentile 2.5/97.5 using linear quantile; descriptive only",
+    "permutation": "65536 Rademacher sign-flips of unit-level effects, statistic absolute mean; two-sided plus-one Monte Carlo p; descriptive only",
+    "seed_literal": "P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_RC_V2|{checkpoint}|{stratum}|{sham}|{procedure}",
+    "seed_derivation": "first 8 SHA256 UTF8 digest bytes unsigned big endian",
+    "invalid": "nonfinite unit data fail numerical gate; never silently drop invalid units"
+  },
+  "historical_continuity": {
+    "status": "OMITTED_NON_GATING_DIAGNOSTIC",
+    "reason": "Optional diagnostics deferred to avoid extending RC preparation; never fresh gates."
+  },
+  "coordinate_boundary": "Native carrier coordinates only; no intrinsic 4-D state, coordinate-invariant transported manifold, minimal realization, predictive state, closed rank-4 subsystem, universal world-model mechanism, or tangent-method novelty.",
+  "significance_review": "intake/TRANSPORTED_INTERFACE_SIGNIFICANCE_DEEP_RESEARCH_V1.md"
+}

@@ -1,0 +1,7 @@
+Checkpoint,Stratum,Full-dose residual,Midpoint chord deviation,Numerical valid,Cell
+291402,S1,0.4187,0.2407,Yes,Pass
+291402,S2,1.1589,0.5202,Yes,Pass
+291403,S1,0.2480,0.1438,Yes,Pass
+291403,S2,0.8455,0.5124,Yes,Pass
+291404,S1,0.1888,0.0796,Yes,Fail
+291404,S2,0.6171,0.2790,Yes,Pass

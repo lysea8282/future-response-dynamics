@@ -1,0 +1,119 @@
+{
+  "task_root": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_PRIVILEGED_RANK6_TRANSPORT_CONFIRMATION_RC_V1",
+  "fit": {
+    "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_P2_ALIGNED_CARRIER_METHOD_REDESIGN_V1/working/runtime_workspace/artifacts/p2_aligned_carrier/population/P2_LSTM_CARRIER_FIT_V1.jsonl",
+    "sha256": "D82045D52094D03FC9A83F7B564478E0C5E2FEA648597962664FB4D62A92F4FD",
+    "size_bytes": 13719948
+  },
+  "dev": {
+    "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_P2_ALIGNED_CARRIER_METHOD_REDESIGN_V1/working/runtime_workspace/artifacts/p2_aligned_carrier/population/P2_LSTM_CARRIER_DEV_V1.jsonl",
+    "sha256": "7829A00BCD32BF051BF752F0BF46FAD9538E9EB62414319CBC368EF3CC904DFD",
+    "size_bytes": 6861331
+  },
+  "final_registry": {
+    "path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_RC_V2\\fresh_assets\\FRESH_UNIT_REGISTRY.json",
+    "sha256": "DD08416CCFDD30A1974146C87E9CF1581815E9978D9646B50BB8120BBC725D60",
+    "size_bytes": 18454,
+    "role": null
+  },
+  "final_physical_units": {
+    "path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_RC_V2\\fresh_assets\\FRESH_EVALUATION_UNITS.jsonl",
+    "sha256": "C2DFC985AD2AC40A9805E81CBA87CA3EC40CBB78007B49A13877E98BBCB20104",
+    "size_bytes": 860788,
+    "role": null
+  },
+  "checkpoints": {
+    "390991": {
+      "path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_MONOLITHIC_LSTM_TRAINING_CALIBRATION_AND_FRESH_ADEQUACY_V2\\working\\runtime_workspace\\artifacts\\lstm_training_calibration_v2\\c2_390991\\LSTM_seed_390991.pt",
+      "sha256": "EC76CA179A245BAA246BBD2F65725DCAC9FC87A6E7BE1FA8F04DE334A0E5DE02",
+      "size_bytes": 1985837,
+      "role": "DEVELOPMENT_ONLY"
+    },
+    "390992": {
+      "path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_MONOLITHIC_LSTM_TRAINING_CALIBRATION_AND_FRESH_ADEQUACY_V2\\working\\runtime_workspace\\artifacts\\lstm_training_calibration_v2\\c2_390992\\LSTM_seed_390992.pt",
+      "sha256": "EC25A7A43157C84F944D2D0244B2B8A90601504AB51C5BA121C010D39C397D2B",
+      "size_bytes": 1985837,
+      "role": "DEVELOPMENT_ONLY"
+    },
+    "392001": {
+      "path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_MONOLITHIC_LSTM_TRAINING_CALIBRATION_AND_FRESH_ADEQUACY_V2\\working\\runtime_workspace\\artifacts\\lstm_training_calibration_v2\\fresh_train_392001\\LSTM_seed_392001.pt",
+      "sha256": "7BA0CB31C4CE8068639CD69E53EEF01BFA4663066A54E79C48794F82C3151AEC",
+      "size_bytes": 1985837,
+      "role": "FRESH_TRAIN_FIT_ONLY_AFTER_RANK_FREEZE"
+    },
+    "392002": {
+      "path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_MONOLITHIC_LSTM_TRAINING_CALIBRATION_AND_FRESH_ADEQUACY_V2\\working\\runtime_workspace\\artifacts\\lstm_training_calibration_v2\\fresh_train_392002\\LSTM_seed_392002.pt",
+      "sha256": "495958A0B3AB2A2094772826D1AE4BD682CFCAA93F9CD7142B2B9B5B911F0A35",
+      "size_bytes": 1985837,
+      "role": "FRESH_TRAIN_FIT_ONLY_AFTER_RANK_FREEZE"
+    },
+    "392003": {
+      "path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_MONOLITHIC_LSTM_TRAINING_CALIBRATION_AND_FRESH_ADEQUACY_V2\\working\\runtime_workspace\\artifacts\\lstm_training_calibration_v2\\fresh_train_392003\\LSTM_seed_392003.pt",
+      "sha256": "BFAF73F52BEE427F1E963902AABED5452DC2F97FF9C74F2CC2B2566434CAF981",
+      "size_bytes": 1985837,
+      "role": "FRESH_TRAIN_FIT_ONLY_AFTER_RANK_FREEZE"
+    },
+    "390993": {
+      "path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_LSTM_P2_ALIGNED_CARRIER_METHOD_REDESIGN_V2\\working\\runtime_workspace\\artifacts\\p2_aligned_carrier_v2\\train_390993\\LSTM_seed_390993.pt",
+      "sha256": "D9DFCFE504970C2E1C44A4256636BB5547B7AADC7D7FD9B8E512FBD4994C5C6A",
+      "size_bytes": 1985837
+    }
+  },
+  "development_seeds": [
+    390991,
+    390992,
+    390993
+  ],
+  "fresh_seeds": [
+    392001,
+    392002,
+    392003
+  ],
+  "development_interfaces": {
+    "390991": {
+      "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_P2_ALIGNED_CARRIER_METHOD_REDESIGN_V2/working/runtime_workspace/artifacts/p2_aligned_carrier_v2/rank_390991/interface_fit.npz",
+      "sha256": "1FC29353881B844DA5B669B67F69A52AE2E673D3A96E58EC11CBAEADE22834AC",
+      "size_bytes": 25995,
+      "role": "FROZEN_FIT_ONLY_INTERFACE"
+    },
+    "390992": {
+      "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_P2_ALIGNED_CARRIER_METHOD_REDESIGN_V2/working/runtime_workspace/artifacts/p2_aligned_carrier_v2/rank_390992/interface_fit.npz",
+      "sha256": "911BFFA8A35ADAB25B187018B80A451AA5B85DABFE67FEE4B0C40DBB0D1E6145",
+      "size_bytes": 26101,
+      "role": "FROZEN_FIT_ONLY_INTERFACE"
+    },
+    "390993": {
+      "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_P2_ALIGNED_CARRIER_METHOD_REDESIGN_V2/working/runtime_workspace/artifacts/p2_aligned_carrier_v2/rank_390993/interface_fit.npz",
+      "sha256": "3BE37FCAC202AC8E71996CCD4CA9A848EA466818AF2A64FE3358111746D93C24",
+      "size_bytes": 26099,
+      "role": "FROZEN_FIT_ONLY_INTERFACE"
+    }
+  },
+  "recipe": {
+    "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_MONOLITHIC_LSTM_TRAINING_CALIBRATION_AND_FRESH_ADEQUACY_V2/LSTM_SELECTED_TRAINING_RECIPE_V2.json",
+    "sha256": "D8D69CE2C3D2A2F5012DF5326710AB7D11B5B634ABCD7B35F3348053030E7191",
+    "size_bytes": 44462,
+    "role": null
+  },
+  "architecture": {
+    "path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_MONOLITHIC_LSTM_TRAINING_CALIBRATION_AND_FRESH_ADEQUACY_V2\\working\\runtime_workspace\\src\\lstm_model.py",
+    "sha256": "1A79318A15619613A1D447E76FA0EB0B255132F636A2F0970E0F529540E438BA",
+    "size_bytes": 2081,
+    "role": null
+  },
+  "core_config": {
+    "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_PRIVILEGED_RANK6_TRANSPORT_CONFIRMATION_RC_V1/configs/TRANSPORT_CORE_CONFIG.json",
+    "sha256": "31205537A15F692EDB08DBE6F1DF12E2C6D38A2F10AD1B455D5C514266AC7A03",
+    "size_bytes": 2751,
+    "role": "EVIDENCE"
+  },
+  "dev_registry": {
+    "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_PRIVILEGED_RANK6_TRANSPORT_CONFIRMATION_RC_V1/configs/DEVELOPMENT_REPLAY_REGISTRY.json",
+    "sha256": "57BE88557DC9D2939E47C32F80172E2E66FBD3C34FD19AD389FC82655CE53630",
+    "size_bytes": 9139,
+    "role": "EVIDENCE"
+  },
+  "required_python": "EXTERNAL_CANONICAL_LOCATOR/python.exe",
+  "fixed_rank": 6,
+  "full_carrier_dimension": 384
+}

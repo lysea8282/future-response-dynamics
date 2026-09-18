@@ -1,0 +1,41 @@
+{
+  "schema": "paper2-section4-1-figure-source-v1",
+  "authoritative_table": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORT_STACKING_EFFECT_AUDIT_V1/tables/POOLING_EFFECT_SUMMARY.csv",
+  "authoritative_table_sha256": "70B3D8DF8E0869BD919C28615113A860D77AE3195E274913B46AC51467472E23",
+  "local_source": "results/paper_figures/section4_1_source/POOLING_EFFECT_SUMMARY.csv",
+  "source_columns": {
+    "fixed_entry_occupancy_median": "fixed_U4_median",
+    "transported_image_capture_median": "capture_F_median"
+  },
+  "population": {
+    "role": "W30_CARRIER_FIT",
+    "unit_count": 1024,
+    "source_path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/W29_RESULT_CLOSURE_AND_W30_ENTRY_PREREGISTRATION_V1/datasets/carrier_fit/W30_CARRIER_FIT_V1.jsonl",
+    "sha256": "5C51BBB45EA3A8EC6AF16F1EE2F206C5EDD2F7C1A8D56F8CBA8159FEA03F15EE"
+  },
+  "checkpoint_ids": [
+    291402,
+    291403,
+    291404
+  ],
+  "statistic": "Median across the same1024carrier-fit units, separately by checkpoint and release.",
+  "release_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "release_origin": "Post-assimilation/one-shot-patch anchor t=7 is k=0; subsequent autonomous transitions.",
+  "classification": "ACCEPTED_EXPLORATORY_DIAGNOSTIC",
+  "uncertainty_bands": false,
+  "scientific_recomputation": false,
+  "source_pack_prior_binding_verified": true
+}

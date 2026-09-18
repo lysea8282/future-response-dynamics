@@ -1,0 +1,468 @@
+{
+  "claims": [
+    {
+      "claim_id": "C01",
+      "proposed_wording": "A checkpoint-specific rank-4 operational entry interface provides compact causal access in the structured GRU.",
+      "evidence_ids": [
+        "E01",
+        "E05"
+      ],
+      "evidence_class": [
+        "ACCEPTED_EXPLORATORY_MECHANISM",
+        "FORMAL_ACCEPTED_PRIMARY"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/W30_CONFIRMATORY_LOW_RANK_EFFECTIVE_STATE_EVALUATION_V1/metrics/confirmatory_panel_result.json",
+          "sha256": "F9D95863ADC96C372BC634AAF87C1F33BE401CB6A490036BC581B53CB1B08941",
+          "evidence_id": "E01"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_POST_RUN_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "BB3AEDD42BE979FEF3DF45E0B33D0A4B748FB94B2720373791CA95CC2F6AF049",
+          "evidence_id": "E05"
+        }
+      ],
+      "replication_scope": "One-shot velocity edits, anchor 7, horizon 12; rank 4, beta 1, ridge 1e-4.; 291405,291406,291407; 64 units/checkpoint; both strata and all frozen gates required.",
+      "architecture_applicability": "GRU",
+      "evidence_mode": "Inherited nonfinal confirmatory + Formal transport use",
+      "required_qualification": "Task, anchor, horizon and checkpoint family restricted; not a state dimension.",
+      "forbidden_stronger_wording": "A universal four-dimensional sufficient state.",
+      "destination": "Methods 3.2; Appendix A"
+    },
+    {
+      "claim_id": "C02",
+      "proposed_wording": "Later patched–factual differences need not remain in the fixed entry plane.",
+      "evidence_ids": [
+        "E02"
+      ],
+      "evidence_class": [
+        "ACCEPTED_EXPLORATORY_MECHANISM"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORT_STACKING_EFFECT_AUDIT_V1/handoff/TRANSPORT_STACKING_EFFECT_DECISION_V1.json",
+          "sha256": "9A7935D845FF8A686409AD0EF4F1C52767BA02241FFCD5AF2F44CE1971D269FA",
+          "evidence_id": "E02"
+        }
+      ],
+      "replication_scope": "Previously used checkpoints 291402–291404; exploratory reused populations, not fresh replication.",
+      "architecture_applicability": "GRU",
+      "evidence_mode": "Exploratory",
+      "required_qualification": "Previously used fit-pool trajectories; no new fresh nonclosure assay.",
+      "forbidden_stronger_wording": "Proved intrinsic high dimensionality or no possible compact coordinate system.",
+      "destination": "Results 4.1; Appendix C"
+    },
+    {
+      "claim_id": "C03",
+      "proposed_wording": "A state-dependent factual transported image captures a substantial later correction component.",
+      "evidence_ids": [
+        "E02",
+        "E05",
+        "E06",
+        "E19"
+      ],
+      "evidence_class": [
+        "ACCEPTED_EXPLORATORY_MECHANISM",
+        "FORMAL_ACCEPTED_CROSS_ARCHITECTURE",
+        "FORMAL_ACCEPTED_PRIMARY",
+        "FORMAL_ACCEPTED_REPLICATION"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORT_STACKING_EFFECT_AUDIT_V1/handoff/TRANSPORT_STACKING_EFFECT_DECISION_V1.json",
+          "sha256": "9A7935D845FF8A686409AD0EF4F1C52767BA02241FFCD5AF2F44CE1971D269FA",
+          "evidence_id": "E02"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_POST_RUN_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "BB3AEDD42BE979FEF3DF45E0B33D0A4B748FB94B2720373791CA95CC2F6AF049",
+          "evidence_id": "E05"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_POST_RUN_INDEPENDENT_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "C9B4DA0FD09913323CDF76E755186762CA1111B1CBE642C8AE953BC3C4870BFF",
+          "evidence_id": "E06"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_LSTM_PRIVILEGED_RANK6_TRANSPORT_POST_RUN_INDEPENDENT_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "A917EF5884E3403C68F9BE2C7D984D1D6B7D93852F02D65490FA5979EE2E01C8",
+          "evidence_id": "E19"
+        }
+      ],
+      "replication_scope": "Previously used checkpoints 291402–291404; exploratory reused populations, not fresh replication.; 291405,291406,291407; 64 units/checkpoint; both strata and all frozen gates required.; Original 3 locked; extension adds seven trained models, six eligible. No 291408 or 291409.; Correct privileged rank-6 anchor correction supplied; operational semantic interface false; specificity untested; no rank-6 sufficient-state claim.",
+      "architecture_applicability": "GRU and privileged LSTM",
+      "evidence_mode": "Exploratory then Formal",
+      "required_qualification": "Unit-specific image; capture is geometric and finite-horizon; residual remains.",
+      "forbidden_stronger_wording": "A shared downstream module or exact tangent dynamics.",
+      "destination": "Results 4.1–4.2; Appendix C"
+    },
+    {
+      "claim_id": "C04",
+      "proposed_wording": "Factual tangent transport supports substantial counterfactual functional recovery on autonomous restart.",
+      "evidence_ids": [
+        "E03",
+        "E05",
+        "E06",
+        "E19"
+      ],
+      "evidence_class": [
+        "ACCEPTED_EXPLORATORY_MECHANISM",
+        "FORMAL_ACCEPTED_CROSS_ARCHITECTURE",
+        "FORMAL_ACCEPTED_PRIMARY",
+        "FORMAL_ACCEPTED_REPLICATION"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORTED_COMPONENT_FUNCTIONAL_SUFFICIENCY_PROBE_V1/handoff/TRANSPORTED_COMPONENT_FUNCTIONAL_SUFFICIENCY_DECISION_V1.json",
+          "sha256": "9C3A10DBCDAC9AE2F3DBF0167B2547C4FDF407269DA684816FD0EF89F8D40C6C",
+          "evidence_id": "E03"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_POST_RUN_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "BB3AEDD42BE979FEF3DF45E0B33D0A4B748FB94B2720373791CA95CC2F6AF049",
+          "evidence_id": "E05"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_POST_RUN_INDEPENDENT_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "C9B4DA0FD09913323CDF76E755186762CA1111B1CBE642C8AE953BC3C4870BFF",
+          "evidence_id": "E06"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_LSTM_PRIVILEGED_RANK6_TRANSPORT_POST_RUN_INDEPENDENT_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "A917EF5884E3403C68F9BE2C7D984D1D6B7D93852F02D65490FA5979EE2E01C8",
+          "evidence_id": "E19"
+        }
+      ],
+      "replication_scope": "Previously used checkpoints 291402–291404; exploratory reused populations, not fresh replication.; 291405,291406,291407; 64 units/checkpoint; both strata and all frozen gates required.; Original 3 locked; extension adds seven trained models, six eligible. No 291408 or 291409.; Correct privileged rank-6 anchor correction supplied; operational semantic interface false; specificity untested; no rank-6 sufficient-state claim.",
+      "architecture_applicability": "GRU and privileged LSTM",
+      "evidence_mode": "Exploratory then Formal",
+      "required_qualification": "Recovery on contrastable times; both population coverage and model-level gates retained.",
+      "forbidden_stronger_wording": "Complete sufficient state or exact recovery for every unit.",
+      "destination": "Results 4.2; Appendix D"
+    },
+    {
+      "claim_id": "C05",
+      "proposed_wording": "Correct semantic addressing outperforms specified norm-matched controls in supporting GRU checkpoints.",
+      "evidence_ids": [
+        "E04",
+        "E05",
+        "E06",
+        "E07"
+      ],
+      "evidence_class": [
+        "ACCEPTED_EXPLORATORY_MECHANISM",
+        "FORMAL_ACCEPTED_PRIMARY",
+        "FORMAL_ACCEPTED_REPLICATION",
+        "NEGATIVE_BOUNDARY_RESULT"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORTED_COMPONENT_SEMANTIC_SPECIFICITY_SHAM_V1/handoff/TRANSPORTED_COMPONENT_SEMANTIC_SPECIFICITY_DECISION_V1.json",
+          "sha256": "78102A66950EE9A2A2881023FF5C2F75122AB1A32BF5B29C7F8241174F690901",
+          "evidence_id": "E04"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_POST_RUN_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "BB3AEDD42BE979FEF3DF45E0B33D0A4B748FB94B2720373791CA95CC2F6AF049",
+          "evidence_id": "E05"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_POST_RUN_INDEPENDENT_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "C9B4DA0FD09913323CDF76E755186762CA1111B1CBE642C8AE953BC3C4870BFF",
+          "evidence_id": "E06"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_POST_RUN_INDEPENDENT_AUDIT_V1/INDEPENDENT_RESULT_FREEZE.json",
+          "sha256": "A2FFEDA69D48087D3CF6329083DEA81000C4AF5A2B5D6409C3C8C640C0D9B585",
+          "evidence_id": "E07"
+        }
+      ],
+      "replication_scope": "Previously used checkpoints 291402–291404; exploratory reused populations, not fresh replication.; 291405,291406,291407; 64 units/checkpoint; both strata and all frozen gates required.; Original 3 locked; extension adds seven trained models, six eligible. No 291408 or 291409.; Retained in N10 and N9; S1 supports.",
+      "architecture_applicability": "GRU only",
+      "evidence_mode": "Exploratory then Formal",
+      "required_qualification": "Three frozen sham families; heterogeneous checkpoint support; LSTM specificity untested.",
+      "forbidden_stronger_wording": "Universal semantic specificity or replicated LSTM semantic control.",
+      "destination": "Results 4.3; Appendix E"
+    },
+    {
+      "claim_id": "C06",
+      "proposed_wording": "Full GRU support varies across training solutions: 7/10 end-to-end and 7/9 among eligible models.",
+      "evidence_ids": [
+        "E05",
+        "E06",
+        "E07",
+        "E08"
+      ],
+      "evidence_class": [
+        "FORMAL_ACCEPTED_PRIMARY",
+        "FORMAL_ACCEPTED_REPLICATION",
+        "NEGATIVE_BOUNDARY_RESULT"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_POST_RUN_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "BB3AEDD42BE979FEF3DF45E0B33D0A4B748FB94B2720373791CA95CC2F6AF049",
+          "evidence_id": "E05"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_POST_RUN_INDEPENDENT_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "C9B4DA0FD09913323CDF76E755186762CA1111B1CBE642C8AE953BC3C4870BFF",
+          "evidence_id": "E06"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_POST_RUN_INDEPENDENT_AUDIT_V1/INDEPENDENT_RESULT_FREEZE.json",
+          "sha256": "A2FFEDA69D48087D3CF6329083DEA81000C4AF5A2B5D6409C3C8C640C0D9B585",
+          "evidence_id": "E07"
+        },
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/release_candidates/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2/RETAINED_BASELINE_INELIGIBLE_291414.json",
+          "sha256": "1D2A0DDDEA7BB5C23B1829CF0DA9ECB904E71D415C528C7B7B4EE41481CCAD69",
+          "evidence_id": "E08"
+        }
+      ],
+      "replication_scope": "291405,291406,291407; 64 units/checkpoint; both strata and all frozen gates required.; Original 3 locked; extension adds seven trained models, six eligible. No 291408 or 291409.; Retained in N10 and N9; S1 supports.; N10 included, N9 excluded.",
+      "architecture_applicability": "GRU",
+      "evidence_mode": "Formal primary + extension",
+      "required_qualification": "Original 2/3; new eligible 5/6; baseline9/10; 291414 mechanism not evaluated.",
+      "forbidden_stronger_wording": "Ten originally preregistered models, or baseline failure called mechanism failure.",
+      "destination": "Results 4.3–4.4; Limitations"
+    },
+    {
+      "claim_id": "C07",
+      "proposed_wording": "Post-hoc coverage analysis gives mixed, checkpoint-specific explanations of non-support.",
+      "evidence_ids": [
+        "E09"
+      ],
+      "evidence_class": [
+        "ACCEPTED_DIAGNOSTIC"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_INPUT_COVERAGE_AND_RANK4_ORIGIN_DIAGNOSTIC_V1/DIAGNOSTIC_DECISION.json",
+          "sha256": "9DF61122810A3CF1545DCCBE031488429F70BA0EF7E1D5B692A26FD252FD39E5",
+          "evidence_id": "E09"
+        }
+      ],
+      "replication_scope": "Post-hoc diagnostics; 291405 mixed, 291413 not explained, 291414 mixed/confounded.",
+      "architecture_applicability": "GRU",
+      "evidence_mode": "Diagnostic",
+      "required_qualification": "Same physical training data does not mean identical finite evaluation coverage; no causal identification.",
+      "forbidden_stronger_wording": "No distribution shift exists, or distribution shift explains all failures.",
+      "destination": "Discussion; Appendix I"
+    },
+    {
+      "claim_id": "C08",
+      "proposed_wording": "Rank-4 entry is compatible with four request slots but not fully explained by request count.",
+      "evidence_ids": [
+        "E10"
+      ],
+      "evidence_class": [
+        "ACCEPTED_DIAGNOSTIC"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_INPUT_COVERAGE_AND_RANK4_ORIGIN_DIAGNOSTIC_V1/RANK4_ORIGIN_DIAGNOSTIC.md",
+          "sha256": "C4870D2B1F6DBFCFE55B026BB6AAE6900C34CFB01909EE30069A0B59E14099B2",
+          "evidence_id": "E10"
+        }
+      ],
+      "replication_scope": "Pooled rank-4 energy 0.7706–0.8822; orientation evidence mostly pooled, weaker within regimes.",
+      "architecture_applicability": "GRU",
+      "evidence_mode": "Diagnostic",
+      "required_qualification": "35/36 per-slot cells require more than one direction for95%energy; pooled and within-regime evidence differ.",
+      "forbidden_stronger_wording": "Exactly one latent direction per human variable.",
+      "destination": "Discussion; Appendix I"
+    },
+    {
+      "claim_id": "C09",
+      "proposed_wording": "Compact causal access and correction transport do not establish a compact closed sufficient recurrent state.",
+      "evidence_ids": [
+        "E01",
+        "E10",
+        "E11"
+      ],
+      "evidence_class": [
+        "ACCEPTED_DIAGNOSTIC",
+        "ACCEPTED_EXPLORATORY_MECHANISM",
+        "NEGATIVE_BOUNDARY_RESULT"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/W30_CONFIRMATORY_LOW_RANK_EFFECTIVE_STATE_EVALUATION_V1/metrics/confirmatory_panel_result.json",
+          "sha256": "F9D95863ADC96C372BC634AAF87C1F33BE401CB6A490036BC581B53CB1B08941",
+          "evidence_id": "E01"
+        },
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_INPUT_COVERAGE_AND_RANK4_ORIGIN_DIAGNOSTIC_V1/RANK4_ORIGIN_DIAGNOSTIC.md",
+          "sha256": "C4870D2B1F6DBFCFE55B026BB6AAE6900C34CFB01909EE30069A0B59E14099B2",
+          "evidence_id": "E10"
+        },
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_INPUT_COVERAGE_AND_RANK4_ORIGIN_DIAGNOSTIC_V1/HISTORICAL_CONTEXT_READBACK.json",
+          "sha256": "AD96F57C662513F82E854EEA72AE2EDA6AF80AFF8B18E59B588F69821DC8A271",
+          "evidence_id": "E11"
+        }
+      ],
+      "replication_scope": "One-shot velocity edits, anchor 7, horizon 12; rank 4, beta 1, ridge 1e-4.; Pooled rank-4 energy 0.7706–0.8822; orientation evidence mostly pooled, weaker within regimes.; Historical V3.3-origin tests, distinct populations/assays; preserved through V3.2 accepted diagnostic readback.",
+      "architecture_applicability": "GRU; interpretation boundary also LSTM",
+      "evidence_mode": "Diagnostic and conceptual distinction",
+      "required_qualification": "Historical closure tests cover specified linear/reduced models, not every nonlinear state.",
+      "forbidden_stronger_wording": "No compact state can exist, or rank4/rank6 is the full world state.",
+      "destination": "Discussion; Appendix J"
+    },
+    {
+      "claim_id": "C10",
+      "proposed_wording": "LSTM development checkpoints admit a privileged compact correction at common tested rank6.",
+      "evidence_ids": [
+        "E12",
+        "E17",
+        "E19"
+      ],
+      "evidence_class": [
+        "ACCEPTED_DIAGNOSTIC",
+        "FORMAL_ACCEPTED_CROSS_ARCHITECTURE",
+        "HISTORICAL_SUPERSEDED"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_MONOLITHIC_LSTM_ARCHITECTURE_ADEQUACY_V1/P2_MONOLITHIC_LSTM_ARCHITECTURE_ADEQUACY_V1_DECISION.json",
+          "sha256": "7B129DDBC128CC199DF975657EF992496BD6723F0AF2716AD3B40E7EB6ECA484",
+          "evidence_id": "E12"
+        },
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_COMPACT_ENTRY_ORACLE_ADDRESSABILITY_DIAGNOSTIC_V1/P2_LSTM_COMPACT_ENTRY_ORACLE_ADDRESSABILITY_DIAGNOSTIC_V1_DECISION.json",
+          "sha256": "6BF1111D05FA69738B4935A3B74AEB0412B950919EA22A712E7F44DFBADCC346",
+          "evidence_id": "E17"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_LSTM_PRIVILEGED_RANK6_TRANSPORT_POST_RUN_INDEPENDENT_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "A917EF5884E3403C68F9BE2C7D984D1D6B7D93852F02D65490FA5979EE2E01C8",
+          "evidence_id": "E19"
+        }
+      ],
+      "replication_scope": "Architecture unchanged; GRU 496200 parameters.; Privileged coefficients use native-CF minus factual anchor; development only.; Correct privileged rank-6 anchor correction supplied; operational semantic interface false; specificity untested; no rank-6 sufficient-state claim.",
+      "architecture_applicability": "LSTM",
+      "evidence_mode": "Development diagnostic then privileged Formal test",
+      "required_qualification": "Correct native-CF anchor difference required; rank6 is minimum tested common rank in the grid.",
+      "forbidden_stronger_wording": "Operational interface or intrinsic minimal state dimension.",
+      "destination": "Results 4.6; Appendix L"
+    },
+    {
+      "claim_id": "C11",
+      "proposed_wording": "The tested affine semantic-addressability route did not robustly generalize to LSTM development checkpoints.",
+      "evidence_ids": [
+        "E14",
+        "E15",
+        "E16",
+        "E17"
+      ],
+      "evidence_class": [
+        "ACCEPTED_DIAGNOSTIC",
+        "HISTORICAL_SUPERSEDED",
+        "NEGATIVE_BOUNDARY_RESULT"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_COMPACT_CARRIER_AND_TRANSPORT_PREREGISTRATION_V1/P2_LSTM_COMPACT_CARRIER_AND_TRANSPORT_PREREGISTRATION_V1_DECISION.json",
+          "sha256": "D110B297A0A77FC961AC2DA91F6C6BF405668136ED0CB3923DCD705B2A77C3A5",
+          "evidence_id": "E14"
+        },
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_P2_ALIGNED_CARRIER_METHOD_REDESIGN_V1/P2_LSTM_P2_ALIGNED_CARRIER_METHOD_REDESIGN_V1_DECISION.json",
+          "sha256": "25CCC88E590EBB1C04B51A7D387A342FC935252BEA264EAA823710714BAA3CC8",
+          "evidence_id": "E15"
+        },
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_P2_ALIGNED_CARRIER_METHOD_REDESIGN_V2/P2_LSTM_P2_ALIGNED_CARRIER_METHOD_REDESIGN_V2_DECISION.json",
+          "sha256": "F8103B9141F94335301297E9E5A1BA886919D07A93079343E4FF557A976F3D4E",
+          "evidence_id": "E16"
+        },
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_LSTM_COMPACT_ENTRY_ORACLE_ADDRESSABILITY_DIAGNOSTIC_V1/P2_LSTM_COMPACT_ENTRY_ORACLE_ADDRESSABILITY_DIAGNOSTIC_V1_DECISION.json",
+          "sha256": "6BF1111D05FA69738B4935A3B74AEB0412B950919EA22A712E7F44DFBADCC346",
+          "evidence_id": "E17"
+        }
+      ],
+      "replication_scope": "Earlier population/design, preserved as history.; Development history only; does not overwrite original GRU Formal outcomes.; Development seeds 390991–390993; grid 1,2,4,6,8,12,16; at least two of three required.; Privileged coefficients use native-CF minus factual anchor; development only.",
+      "architecture_applicability": "LSTM",
+      "evidence_mode": "Development negative boundary",
+      "required_qualification": "Specific mapper/population/rank grid; privileged capacity comparison, no proof against other nonlinear maps.",
+      "forbidden_stronger_wording": "LSTM has no semantic representation, or privileged success rescues affine failure.",
+      "destination": "Results 4.6; Discussion; Appendix L"
+    },
+    {
+      "claim_id": "C12",
+      "proposed_wording": "Given the correct compact anchor correction, the transport core supports both strata in3/3 fresh LSTM checkpoints.",
+      "evidence_ids": [
+        "E12",
+        "E13",
+        "E18",
+        "E19"
+      ],
+      "evidence_class": [
+        "ACCEPTED_DIAGNOSTIC",
+        "ENGINEERING_OR_GOVERNANCE_ONLY",
+        "FORMAL_ACCEPTED_CROSS_ARCHITECTURE",
+        "HISTORICAL_SUPERSEDED"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_MONOLITHIC_LSTM_ARCHITECTURE_ADEQUACY_V1/P2_MONOLITHIC_LSTM_ARCHITECTURE_ADEQUACY_V1_DECISION.json",
+          "sha256": "7B129DDBC128CC199DF975657EF992496BD6723F0AF2716AD3B40E7EB6ECA484",
+          "evidence_id": "E12"
+        },
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_MONOLITHIC_LSTM_TRAINING_CALIBRATION_AND_FRESH_ADEQUACY_V2/P2_MONOLITHIC_LSTM_TRAINING_CALIBRATION_AND_FRESH_ADEQUACY_V2_DECISION.json",
+          "sha256": "078CFCCF4C5E3897D97AEF2EDABF64D6F8F20D7F75333F0D3CB2AF9E08F99AD3",
+          "evidence_id": "E13"
+        },
+        {
+          "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/release_candidates/P2_LSTM_PRIVILEGED_RANK6_TRANSPORT_CONFIRMATION_RC_V1/configs/TRANSPORT_CORE_CONFIG.json",
+          "sha256": "31205537A15F692EDB08DBE6F1DF12E2C6D38A2F10AD1B455D5C514266AC7A03",
+          "evidence_id": "E18"
+        },
+        {
+          "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_LSTM_PRIVILEGED_RANK6_TRANSPORT_POST_RUN_INDEPENDENT_AUDIT_V1/AUDIT_DECISION.json",
+          "sha256": "A917EF5884E3403C68F9BE2C7D984D1D6B7D93852F02D65490FA5979EE2E01C8",
+          "evidence_id": "E19"
+        }
+      ],
+      "replication_scope": "Architecture unchanged; GRU 496200 parameters.; Four recipes on two development seeds; 140 epochs/3360 updates, lr 0.0015 to 0.00015; no mechanism result here.; Design authority used by accepted E19 run; not an outcome on its own.; Correct privileged rank-6 anchor correction supplied; operational semantic interface false; specificity untested; no rank-6 sufficient-state claim.",
+      "architecture_applicability": "LSTM comparator to GRU",
+      "evidence_mode": "Formal cross-architecture",
+      "required_qualification": "Baseline3/3 after disjoint prospective training calibration; no semantic-sham test; no exact sufficiency.",
+      "forbidden_stronger_wording": "Full GRU operational semantic mechanism replicated in LSTM.",
+      "destination": "Results 4.7; Appendix M"
+    },
+    {
+      "claim_id": "C13",
+      "proposed_wording": "Older response-operator analyses support local sensitivity and finite-dose response reconfiguration.",
+      "evidence_ids": [
+        "E20",
+        "E21"
+      ],
+      "evidence_class": [
+        "FORMAL_ACCEPTED_REPLICATION"
+      ],
+      "canonical_sources": [
+        {
+          "path": "Stage2_V3.3/manuscript/public_repo/future-response-dynamics/provenance/CERTIFIED_READBACK.json",
+          "sha256": "EC90148181006CEFACEF5FF4CC3DB95EFB8557B077B099B4EE6CD82BE585D744",
+          "evidence_id": "E20"
+        },
+        {
+          "path": "Stage2_V3.3/audits/distributed_predictive_computation/FFD_002_POST/evidence/INDEPENDENT_REVIEWER_DECISION.json",
+          "sha256": "66289EDFF14281230E217A8700B917913CB118BD2CA75554D304CDA1C179DAEE",
+          "evidence_id": "E21"
+        }
+      ],
+      "replication_scope": "Separate H8 full-carrier response assay, not H12 tangent-transport confirmation.; Older 291402–291404 H8 response-operator assay; canonical historical V3.3 origin.",
+      "architecture_applicability": "GRU older panel",
+      "evidence_mode": "Formal accepted supporting analysis",
+      "required_qualification": "H8 assay, seeds291402–291404; alignment3/3, direction ranking3/3, finite-dose2/3; separate from transport.",
+      "forbidden_stronger_wording": "Three extra transport successes, or local ranking proves finite-dose linear sufficiency.",
+      "destination": "Appendix K"
+    }
+  ]
+}

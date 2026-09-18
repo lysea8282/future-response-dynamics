@@ -1,0 +1,4 @@
+checkpoint,baseline_adequacy,privileged_compact_rank,S1_transport_core_support,S2_transport_core_support,checkpoint_support,S1_capture,S1_recovery,S2_capture,S2_recovery,operational_semantic_addressability,semantic_specificity,canonical_source_audit
+392001,True,6,True,True,True,0.9746280297604228,0.9421038124884313,0.973198838199204,0.9826949839261221,not established,not tested,E13; E19
+392002,True,6,True,True,True,0.9360458189487938,0.8940339322856091,0.9670667131400709,0.9764930104119878,not established,not tested,E13; E19
+392003,True,6,True,True,True,0.9966894016209074,0.985735787984352,0.9711197358565228,0.9591261188272278,not established,not tested,E13; E19

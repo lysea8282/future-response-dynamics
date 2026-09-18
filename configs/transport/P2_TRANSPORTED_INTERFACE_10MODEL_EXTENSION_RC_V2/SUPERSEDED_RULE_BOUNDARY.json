@@ -1,0 +1,40 @@
+{
+  "task_id": "P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2",
+  "frozen_at": "2026-09-13T03:09:38.981659+00:00",
+  "predecessor_preregistration": {
+    "absolute_path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V1\\SCIENTIFIC_10MODEL_EXTENSION_PREREGISTRATION.md",
+    "path": "World-model/Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V1/SCIENTIFIC_10MODEL_EXTENSION_PREREGISTRATION.md",
+    "size_bytes": 6353,
+    "sha256": "C5DBE1C27A96E91A05D851EA02D81E90798BBC20F22238EB12DACB9DCBD9A263"
+  },
+  "predecessor_rule": {
+    "absolute_path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V1\\TEN_MODEL_EXTENSION_DECISION_RULE.json",
+    "path": "World-model/Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V1/TEN_MODEL_EXTENSION_DECISION_RULE.json",
+    "size_bytes": 2030,
+    "sha256": "061C3798427FB3039EB18E15EDCC2413E1A899A0C08EA045850F85135399256A"
+  },
+  "owner_authority": {
+    "absolute_path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2\\PROMPT_PAPER2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2_SCOPE_AMENDMENT.md",
+    "path": "World-model/Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2/PROMPT_PAPER2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2_SCOPE_AMENDMENT.md",
+    "size_bytes": 21140,
+    "sha256": "DCF7604E9A9618F57EE227C8157228F98563D39B5B0E431D05044FD0DA51ABCE"
+  },
+  "superseded_clauses": [
+    "S7/7 as primary new extension endpoint assuming all seven baseline-eligible",
+    "Requirement to prepare mechanism interfaces and assay all seven regardless of the actual health gate",
+    "Combined (2+S7)/10 reporting as the only all-model quantity",
+    "Old qualitative interpretation bands and omission of baseline eligibility conditioning"
+  ],
+  "active_clauses": [
+    "Exact fixed ten trained checkpoint identities",
+    "Original primary 2/3 result and gates",
+    "Retirement of 291408/291409",
+    "No replacement or additional model",
+    "Unchanged .80 pre-mechanism health gate",
+    "Exact original 64-unit registry",
+    "Unchanged RC_V4 checkpoint mechanism assay/statistics/thresholds",
+    "No outcome-dependent stopping",
+    "Historical chronology and prior retired-cohort assistant exposure disclosure"
+  ],
+  "amendment_boundary": "Only handling/reporting of baseline ineligibility observed at the frozen health gate; no mechanism outcome was available for the seven new checkpoints. No V1 file is edited."
+}

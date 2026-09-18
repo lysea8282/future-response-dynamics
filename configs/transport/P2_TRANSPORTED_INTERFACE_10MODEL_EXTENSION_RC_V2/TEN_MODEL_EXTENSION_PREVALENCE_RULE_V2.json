@@ -1,0 +1,60 @@
+{
+  "schema_version": "ten-model-prevalence-scope-v2",
+  "task_id": "P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2",
+  "frozen_at": "2026-09-13T03:09:38.981659+00:00",
+  "original_supports": 2,
+  "original_total": 3,
+  "new_trained_total": 7,
+  "new_baseline_eligible": 6,
+  "new_baseline_ineligible": 1,
+  "fixed_total_trained_models": 10,
+  "baseline_eligible_total": 9,
+  "new_trained_seed_ids": [
+    291410,
+    291411,
+    291412,
+    291413,
+    291414,
+    291415,
+    291416
+  ],
+  "mechanism_evaluation_seed_ids": [
+    291410,
+    291411,
+    291412,
+    291413,
+    291415,
+    291416
+  ],
+  "baseline_ineligible_seed_ids": [
+    291414
+  ],
+  "primary_expanded_quantity": "E10=(2+S6)/10",
+  "conditional_mechanism_quantity": "M9=(2+S6)/9",
+  "baseline_eligibility_quantity": "B10=9/10",
+  "new_eligible_descriptive_quantity": "S6/6",
+  "wilson95": {
+    "z": 1.959963984540054,
+    "continuity_correction": false,
+    "applies_to": [
+      "E10",
+      "M9"
+    ]
+  },
+  "optional_s6_wilson_selected": false,
+  "binary_success_threshold": null,
+  "replacement_allowed": false,
+  "additional_seed_allowed": false,
+  "health_threshold_relaxation_allowed": false,
+  "ineligible_mechanism_evaluation_allowed": false,
+  "outcome_dependent_stopping_allowed": false,
+  "new_primary_p_value_allowed": false,
+  "qualitative_bands": null,
+  "original_primary_reclassification": false,
+  "implementation": {
+    "absolute_path": "Stage2_V3.2\\experiments\\stage2_v3_2_effective_state\\work_items\\P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2\\implementation\\prevalence_scope_v2.py",
+    "path": "World-model/Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2/implementation/prevalence_scope_v2.py",
+    "size_bytes": 4526,
+    "sha256": "A682D9AAA2482A18DF94FABF495F70BEDE5FC3C2128F0792BDDA94459193028D"
+  }
+}

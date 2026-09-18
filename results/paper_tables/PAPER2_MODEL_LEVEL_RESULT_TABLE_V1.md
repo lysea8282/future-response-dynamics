@@ -1,0 +1,16 @@
+# Structured-GRU model-level results
+
+| checkpoint | baseline_eligibility | S1_full_mechanism_support | S2_full_mechanism_support | checkpoint_support | end_to_end_support | failure_reason | canonical_source_audit |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 291405 | ELIGIBLE | False | True | False | False | S1: contrastable_coverage, positive_unit_coverage, T_wrong_object_wins, T_inplane_sham_wins, T_inplane_sham_holm | E05 |
+| 291406 | ELIGIBLE | True | True | True | True | None | E05 |
+| 291407 | ELIGIBLE | True | True | True | True | None | E05 |
+| 291410 | ELIGIBLE | True | True | True | True | None | E06 |
+| 291411 | ELIGIBLE | True | True | True | True | None | E06 |
+| 291412 | ELIGIBLE | True | True | True | True | None | E06 |
+| 291413 | ELIGIBLE | True | False | False | False | S2: contrastability, specificity | E06 |
+| 291414 | INELIGIBLE | NOT_EVALUATED | NOT_EVALUATED | NOT_EVALUATED | False | Frozen baseline health gate; mechanism not evaluated | E08; E06 accepted audit |
+| 291415 | ELIGIBLE | True | True | True | True | None | E06 |
+| 291416 | ELIGIBLE | True | True | True | True | None | E06 |
+
+Displayed floats rounded to six decimals; paired CSV retains accepted full precision. Evidence IDs resolve through the claim/evidence registry.

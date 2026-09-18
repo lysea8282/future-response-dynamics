@@ -1,4 +1,4 @@
-# Environment facts
+# Historical packaging environment facts
 
 - Inspected environment: Python3.12.10; Windows11 AMD64; NumPy2.4.4; PyTorch2.11.0+cu128.
 - Inspection used interpreter/distribution metadata only. No torch/NumPy module or checkpoint was loaded during packaging.
@@ -7,3 +7,7 @@
 - No full environment dump is used as a requirements specification. No claim of testing other OS/GPU/driver combinations.
 - Original model/state/action/future evaluation float32; exported Jacobian float64; preserve mixed operand dtypes and operation order specified by NUMERIC_READBACK_CONTRACT.json.
 - Reproduction is not yet self-contained without the externally listed raw data and checkpoints. No model-run test was performed in this preparation.
+
+## Current public checks
+
+The statements above describe the initial packaging stage, not the current test status. Public NumPy/PyTorch mathematical fixtures and released-data readbacks now execute through `tests/test_manuscript_sync.py`; README and `environment/README.md` specify current commands. This does not constitute a trained-checkpoint rerun. The GRU `paired_statistics.py` reference module imports SciPy in addition to NumPy.

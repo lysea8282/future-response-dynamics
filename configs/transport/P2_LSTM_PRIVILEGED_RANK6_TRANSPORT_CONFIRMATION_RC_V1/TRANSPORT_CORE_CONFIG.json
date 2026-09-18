@@ -1,0 +1,109 @@
+{
+  "unit_count": 64,
+  "strata_counts": {
+    "S1": 32,
+    "S2": 32
+  },
+  "anchor": 7,
+  "horizon": 12,
+  "release_times": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "time_bands": {
+    "early": [
+      1,
+      2,
+      3
+    ],
+    "middle": [
+      4,
+      5,
+      6
+    ],
+    "late": [
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "model_dtype": "float32",
+  "analysis_dtype": "float64",
+  "eps": 1e-24,
+  "rank_rtol": 2.288818359375e-05,
+  "contrast_floor": 1e-05,
+  "primitive_scale": [
+    [
+      0.6472089235448364,
+      0.6243559267725796,
+      0.4020797697996464,
+      0.39198204060541064
+    ],
+    [
+      0.6867968750008838,
+      0.5588272770105953,
+      0.40070553910696244,
+      0.3578059730529785
+    ]
+  ],
+  "normalizer_mean": [
+    0.010910557582974434,
+    0.008827612735331059,
+    -0.0013239462859928608,
+    0.00020721465989481658,
+    0.010910557582974434,
+    0.008827612735331059,
+    -0.0013239462859928608,
+    0.00020721465989481658
+  ],
+  "normalizer_std": [
+    0.6748629808425903,
+    0.6790841221809387,
+    0.2936058044433594,
+    0.2959529161453247,
+    0.6748629808425903,
+    0.6790841221809387,
+    0.2936058044433594,
+    0.2959529161453247
+  ],
+  "engineering_limit": 1000000.0,
+  "arena_position_limit": 4.75,
+  "metric": "Paper1 M3: RMS over equally weighted remaining future steps and all 2x4 primitives after physical denormalization and division by frozen truth-only scales; target native-CF decode as explicitly requested, not simulator truth",
+  "gates": {
+    "contrastable_unit_time_fraction_min_inclusive": 0.75,
+    "positive_unit_median_A_fraction_min_inclusive": 0.75,
+    "transport_capture_min_strict": 0.8,
+    "median_recovery_min_strict": 0.5,
+    "all_numerical_checks_required": true
+  },
+  "device": "cpu",
+  "fixed_rank": 6,
+  "carrier_dimension": 384,
+  "routes": [
+    "F",
+    "O_PATCH",
+    "CF",
+    "T"
+  ],
+  "panel_labels": {
+    "0": "NO_CROSS_ARCHITECTURE_TRANSPORT_CORE_SUPPORT",
+    "1": "LIMITED_CROSS_ARCHITECTURE_TRANSPORT_CORE_SUPPORT",
+    "2": "CROSS_ARCHITECTURE_TRANSPORT_CORE_SUPPORT_WITH_HETEROGENEITY",
+    "3": "STRONG_CROSS_ARCHITECTURE_TRANSPORT_CORE_SUPPORT"
+  },
+  "raw_T_vs_F": "eT_contrast < eF_contrast",
+  "capture_population": "all unit-times; temporal median per unit then stratum median",
+  "recovery": "(eF-eT)/(eF-eO) only for A=eF-eO > contrast_floor; no clipping; within-unit masked median then across units with any contrastable time",
+  "positive_unit": "median(A over all ten times)>0; denominator all registered units",
+  "semantic_shams_primary": false,
+  "semantic_mapper": false
+}

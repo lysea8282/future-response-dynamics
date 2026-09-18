@@ -1,0 +1,295 @@
+{
+  "original_primary": {
+    "exact": {
+      "numerator": 2,
+      "denominator": 3,
+      "rate": 0.6666666666666666
+    },
+    "rounded_display": "2/3 (66.7%)",
+    "evidence_ids": [
+      "E05"
+    ]
+  },
+  "new_eligible_extension": {
+    "exact": {
+      "numerator": 5,
+      "denominator": 6,
+      "rate": 0.8333333333333334
+    },
+    "rounded_display": "5/6 (83.3%)",
+    "evidence_ids": [
+      "E06"
+    ]
+  },
+  "baseline_eligibility": {
+    "exact": {
+      "numerator": 9,
+      "denominator": 10,
+      "rate": 0.9
+    },
+    "rounded_display": "9/10 (90.0%)",
+    "evidence_ids": [
+      "E06"
+    ]
+  },
+  "end_to_end_support": {
+    "exact": {
+      "numerator": 7,
+      "denominator": 10,
+      "rate": 0.7,
+      "wilson95": [
+        0.39677814746114537,
+        0.8922087325936989
+      ]
+    },
+    "rounded_display": "7/10 (70.0%)",
+    "evidence_ids": [
+      "E06"
+    ],
+    "wilson95_display": "39.7%–89.2%",
+    "interval_role": "Accepted Wilson 95% descriptive interval; checkpoint denominator, no added hypothesis test."
+  },
+  "conditional_mechanism_support": {
+    "exact": {
+      "numerator": 7,
+      "denominator": 9,
+      "rate": 0.7777777777777778,
+      "wilson95": [
+        0.45258896910698887,
+        0.9367748928821533
+      ]
+    },
+    "rounded_display": "7/9 (77.8%)",
+    "evidence_ids": [
+      "E06"
+    ],
+    "wilson95_display": "45.3%–93.7%",
+    "interval_role": "Accepted Wilson 95% descriptive interval; checkpoint denominator, no added hypothesis test."
+  },
+  "lstm_fresh_baseline": {
+    "exact": {
+      "numerator": 3,
+      "denominator": 3,
+      "rate": 1.0
+    },
+    "rounded_display": "3/3 (100.0%)",
+    "evidence_ids": [
+      "E13"
+    ]
+  },
+  "lstm_fresh_privileged_transport": {
+    "exact": {
+      "numerator": 3,
+      "denominator": 3,
+      "rate": 1.0
+    },
+    "rounded_display": "3/3 (100.0%)",
+    "evidence_ids": [
+      "E19"
+    ]
+  },
+  "constants": {
+    "GRU_parameters": {
+      "exact": 496200,
+      "rounded_display": "496,200",
+      "evidence_ids": [
+        "E12"
+      ]
+    },
+    "GRU_carrier_dimension": {
+      "exact": 192,
+      "rounded_display": "192",
+      "evidence_ids": [
+        "E01"
+      ]
+    },
+    "GRU_operational_rank": {
+      "exact": 4,
+      "rounded_display": "4",
+      "evidence_ids": [
+        "E01"
+      ]
+    },
+    "LSTM_parameters": {
+      "exact": 494664,
+      "rounded_display": "494,664",
+      "evidence_ids": [
+        "E12"
+      ]
+    },
+    "LSTM_carrier_dimension": {
+      "exact": 384,
+      "rounded_display": "384",
+      "evidence_ids": [
+        "E12"
+      ]
+    },
+    "LSTM_privileged_rank": {
+      "exact": 6,
+      "rounded_display": "6",
+      "evidence_ids": [
+        "E17",
+        "E19"
+      ]
+    }
+  },
+  "GRU_failed_cells": [
+    {
+      "checkpoint": 291405,
+      "stratum": "S1",
+      "evidence_id": "E05"
+    },
+    {
+      "checkpoint": 291413,
+      "stratum": "S2",
+      "evidence_id": "E06"
+    }
+  ],
+  "GRU_291414": {
+    "baseline_eligible": false,
+    "mechanism_support": null,
+    "mechanism_status": "NOT_EVALUATED_BASELINE_INELIGIBLE",
+    "end_to_end_support": false,
+    "evidence_ids": [
+      "E06",
+      "E08"
+    ]
+  },
+  "LSTM_operational_affine_semantic_addressability": {
+    "exact": "NOT_ROBUSTLY_SUPPORTED",
+    "rounded_display": "Not robustly supported",
+    "evidence_ids": [
+      "E16",
+      "E17"
+    ]
+  },
+  "LSTM_cells": [
+    {
+      "checkpoint": 392001,
+      "stratum": "S1",
+      "exact": {
+        "capture": 0.9746280297604228,
+        "recovery": 0.9421038124884313,
+        "contrast_fraction": 1.0,
+        "positive_unit_fraction": 1.0
+      },
+      "rounded_display": {
+        "capture": "0.974628",
+        "recovery": "0.942104",
+        "contrast_fraction": "1.000000",
+        "positive_unit_fraction": "1.000000"
+      },
+      "evidence_ids": [
+        "E19"
+      ]
+    },
+    {
+      "checkpoint": 392001,
+      "stratum": "S2",
+      "exact": {
+        "capture": 0.973198838199204,
+        "recovery": 0.9826949839261221,
+        "contrast_fraction": 0.95,
+        "positive_unit_fraction": 1.0
+      },
+      "rounded_display": {
+        "capture": "0.973199",
+        "recovery": "0.982695",
+        "contrast_fraction": "0.950000",
+        "positive_unit_fraction": "1.000000"
+      },
+      "evidence_ids": [
+        "E19"
+      ]
+    },
+    {
+      "checkpoint": 392002,
+      "stratum": "S1",
+      "exact": {
+        "capture": 0.9360458189487938,
+        "recovery": 0.8940339322856091,
+        "contrast_fraction": 1.0,
+        "positive_unit_fraction": 1.0
+      },
+      "rounded_display": {
+        "capture": "0.936046",
+        "recovery": "0.894034",
+        "contrast_fraction": "1.000000",
+        "positive_unit_fraction": "1.000000"
+      },
+      "evidence_ids": [
+        "E19"
+      ]
+    },
+    {
+      "checkpoint": 392002,
+      "stratum": "S2",
+      "exact": {
+        "capture": 0.9670667131400709,
+        "recovery": 0.9764930104119878,
+        "contrast_fraction": 1.0,
+        "positive_unit_fraction": 1.0
+      },
+      "rounded_display": {
+        "capture": "0.967067",
+        "recovery": "0.976493",
+        "contrast_fraction": "1.000000",
+        "positive_unit_fraction": "1.000000"
+      },
+      "evidence_ids": [
+        "E19"
+      ]
+    },
+    {
+      "checkpoint": 392003,
+      "stratum": "S1",
+      "exact": {
+        "capture": 0.9966894016209074,
+        "recovery": 0.985735787984352,
+        "contrast_fraction": 1.0,
+        "positive_unit_fraction": 1.0
+      },
+      "rounded_display": {
+        "capture": "0.996689",
+        "recovery": "0.985736",
+        "contrast_fraction": "1.000000",
+        "positive_unit_fraction": "1.000000"
+      },
+      "evidence_ids": [
+        "E19"
+      ]
+    },
+    {
+      "checkpoint": 392003,
+      "stratum": "S2",
+      "exact": {
+        "capture": 0.9711197358565228,
+        "recovery": 0.9591261188272278,
+        "contrast_fraction": 1.0,
+        "positive_unit_fraction": 1.0
+      },
+      "rounded_display": {
+        "capture": "0.971120",
+        "recovery": "0.959126",
+        "contrast_fraction": "1.000000",
+        "positive_unit_fraction": "1.000000"
+      },
+      "evidence_ids": [
+        "E19"
+      ]
+    }
+  ],
+  "trained_GRU_checkpoints": [
+    291405,
+    291406,
+    291407,
+    291410,
+    291411,
+    291412,
+    291413,
+    291414,
+    291415,
+    291416
+  ],
+  "chronology": "Original three locked before seven-model training extension; not ten preregistered from original start."
+}

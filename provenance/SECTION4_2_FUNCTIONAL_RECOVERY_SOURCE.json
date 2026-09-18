@@ -1,0 +1,101 @@
+{
+  "schema": "paper2-section4-2-figure-source-v1",
+  "sources": [
+    {
+      "role": "original",
+      "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_POST_RUN_AUDIT_V1/INDEPENDENT_CHECKPOINT_DECISIONS.json",
+      "sha256": "D2BB2803757B3C5D72842752A7CCF88B04622C336B0664C449FF4B87269F27A7",
+      "size_bytes": 58575,
+      "public_path": "results/accepted_summaries/original.json",
+      "public_sha256": "D2BB2803757B3C5D72842752A7CCF88B04622C336B0664C449FF4B87269F27A7"
+    },
+    {
+      "role": "extension",
+      "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_POST_RUN_INDEPENDENT_AUDIT_V1/INDEPENDENT_RESULT_FREEZE.json",
+      "sha256": "A2FFEDA69D48087D3CF6329083DEA81000C4AF5A2B5D6409C3C8C640C0D9B585",
+      "size_bytes": 130012,
+      "public_path": "results/accepted_summaries/extension.json",
+      "public_sha256": "8052BF2B44DC0BE0855C875B3ED3A3F34D31D6576C2020F89C6C4B67B713937F"
+    },
+    {
+      "role": "FRESH_UNIT_REGISTRY.json",
+      "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/work_items/P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_RC_V2/fresh_assets/FRESH_UNIT_REGISTRY.json",
+      "size_bytes": 18454,
+      "sha256": "DD08416CCFDD30A1974146C87E9CF1581815E9978D9646B50BB8120BBC725D60"
+    },
+    {
+      "role": "EXTENSION_BINDING.json",
+      "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/release_candidates/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2/EXTENSION_BINDING.json",
+      "size_bytes": 23180,
+      "sha256": "63B0F7AE83D874760ABC56E324BAEECC8009B58401D24DB400752F8563CD3935"
+    },
+    {
+      "role": "LOCKED_ORIGINAL_RESULT_BINDING.json",
+      "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/release_candidates/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2/LOCKED_ORIGINAL_RESULT_BINDING.json",
+      "size_bytes": 2034,
+      "sha256": "9621EC54FB7F1739034BD61E9FF8C0CE4AB8D45F757A3B4ABC7666C17EA0E053"
+    },
+    {
+      "role": "TEN_MODEL_COHORT_SCOPE_V2.json",
+      "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/release_candidates/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2/TEN_MODEL_COHORT_SCOPE_V2.json",
+      "size_bytes": 3358,
+      "sha256": "578C94116D5701333DCF84BE4788F43A6D4DC9347495E0DBCC138BD5AF33B93A"
+    },
+    {
+      "role": "RETAINED_BASELINE_INELIGIBLE_291414.json",
+      "path": "Stage2_V3.2/experiments/stage2_v3_2_effective_state/release_candidates/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_RC_V2/RETAINED_BASELINE_INELIGIBLE_291414.json",
+      "size_bytes": 2228,
+      "sha256": "1D2A0DDDEA7BB5C23B1829CF0DA9ECB904E71D415C528C7B7B4EE41481CCAD69"
+    },
+    {
+      "role": "AUDIT_REPORT.md",
+      "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_POST_RUN_AUDIT_V1/AUDIT_REPORT.md",
+      "size_bytes": 17142,
+      "sha256": "C0D62CD611DBF20685F6967281D6EE2F56C5D5405B6267BB60F803DAFB83D3D1"
+    },
+    {
+      "role": "AUDIT_DECISION.json",
+      "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_FRESH_CONFIRMATION_POST_RUN_AUDIT_V1/AUDIT_DECISION.json",
+      "size_bytes": 4338,
+      "sha256": "BB3AEDD42BE979FEF3DF45E0B33D0A4B748FB94B2720373791CA95CC2F6AF049"
+    },
+    {
+      "role": "AUDIT_REPORT.md",
+      "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_POST_RUN_INDEPENDENT_AUDIT_V1/AUDIT_REPORT.md",
+      "size_bytes": 16212,
+      "sha256": "FEC65B5EBAD3A3E11A1E9B30BDEB7033FDB3F8CFA796AEBCB03FBCFE5690F2D0"
+    },
+    {
+      "role": "AUDIT_DECISION.json",
+      "path": "Stage2_V3.2/audits/stage2_v3_2_effective_state/P2_TRANSPORTED_INTERFACE_10MODEL_EXTENSION_POST_RUN_INDEPENDENT_AUDIT_V1/AUDIT_DECISION.json",
+      "size_bytes": 4163,
+      "sha256": "C9B4DA0FD09913323CDF76E755186762CA1111B1CBE642C8AE953BC3C4870BFF"
+    }
+  ],
+  "checkpoint_order": [
+    291405,
+    291406,
+    291407,
+    291410,
+    291411,
+    291412,
+    291413,
+    291415,
+    291416
+  ],
+  "population": {
+    "registry_unit_count": 64,
+    "S1": 32,
+    "S2": 32
+  },
+  "baseline_filter": "Exact frozen TEN_MODEL_COHORT_SCOPE_V2.baseline_eligible_seed_ids order; 291414 is NOT_EVALUATED_BASELINE_INELIGIBLE.",
+  "fields": {
+    "recovery": "checkpoints[].strata.{S1,S2}.recovery",
+    "complete_assay": "checkpoints[].strata.{S1,S2}.supports",
+    "core": "checkpoints[].strata.{S1,S2}.gates.capture AND gates.functional"
+  },
+  "aggregation": "Accepted conditional normalized recovery: within-unit temporal median, then stratum median; only contrastable times A=eF-eP > 1e-5. No recomputation or clipping.",
+  "recovery_formula": "(eF-eT)/(eF-eP)",
+  "reference_line": "1.0 equals operational patched-route performance; not a pass threshold",
+  "chart": "One dot plot, S1/S2 marker identities, filled/open complete-assay encoding, 600 dpi PNG and vector PDF. No new manuscript results table."
+}
